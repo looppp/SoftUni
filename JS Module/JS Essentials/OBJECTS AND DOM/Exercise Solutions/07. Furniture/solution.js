@@ -38,4 +38,11 @@ function solve() {
             cell = row.insertCell();
         }
         })
+
+    document.getElementsByTagName("button")[1].addEventListener("click", function () {
+        let radioButton = document.getElementsByTagName('input')[0];
+        if (radioButton.checked){
+            TODO....
+        }
+    })
 }
