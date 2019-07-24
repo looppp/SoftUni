@@ -12,30 +12,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Exercise Solutions/03. Number-Convertor/template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Exercise Solutions/07. Furniture/solution.js">
+        <entry file="file://$PROJECT_DIR$/Exercise Solutions/03. Number-Convertor/solution.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1540">
-              <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Exercise Solutions/07. Furniture/template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="34" column="121" lean-forward="true" selection-start-line="34" selection-start-column="121" selection-end-line="34" selection-end-column="121" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Exercise Solutions/07. Furniture/furniture.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="25" lean-forward="true" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="308">
+              <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -73,6 +64,7 @@
         <option value="$PROJECT_DIR$/Exercise Solutions/01. Cards/solution.js" />
         <option value="$PROJECT_DIR$/Exercise Solutions/02. Chat-Room/solution.js" />
         <option value="$PROJECT_DIR$/Exercise Solutions/07. Furniture/solution.js" />
+        <option value="$PROJECT_DIR$/Exercise Solutions/03. Number-Convertor/solution.js" />
       </list>
     </option>
   </component>
@@ -157,11 +149,12 @@
       <updated>1563803254222</updated>
       <workItem from="1563803255532" duration="8851000" />
       <workItem from="1563864910810" duration="2317000" />
+      <workItem from="1563983640478" duration="7231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24127000" />
+    <option name="totallyTimeSpent" value="31358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -296,24 +289,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Exercise Solutions/07. Furniture/solution.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Exercise Solutions/07. Furniture/furniture.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="5" column="25" lean-forward="true" selection-end-line="14" selection-end-column="1" />
+          <caret line="5" column="25" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Exercise Solutions/07. Furniture/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="34" column="121" lean-forward="true" selection-start-line="34" selection-start-column="121" selection-end-line="34" selection-end-column="121" />
+          <caret line="34" column="121" selection-start-line="34" selection-start-column="121" selection-end-line="34" selection-end-column="121" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Exercise Solutions/07. Furniture/solution.js">
+    <entry file="file://$PROJECT_DIR$/Exercise Solutions/03. Number-Convertor/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1540">
-          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+        <state relative-caret-position="140">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exercise Solutions/03. Number-Convertor/solution.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
         </state>
       </provider>
     </entry>
