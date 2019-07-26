@@ -9,10 +9,9 @@ function solve() {
 
         for(let furniture of furnitureList){
             let row = table.insertRow();
-
             let cell = row.insertCell();
-
             let img = document.createElement('img');
+
             img.setAttribute('src', furniture[img]);
             cell.appendChild(img);
             cell = row.insertCell();
@@ -35,14 +34,10 @@ function solve() {
             let checkBox = document.createElement('input');
             checkBox.setAttribute('type', 'checkbox');
             cell.appendChild(checkBox);
-            cell = row.insertCell();
         }
-        })
+        });
 
     document.getElementsByTagName("button")[1].addEventListener("click", function () {
-        let radioButton = document.getElementsByTagName('input')[0];
-        if (radioButton.checked){
-            TODO....
-        }
+
     })
 }
