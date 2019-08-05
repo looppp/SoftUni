@@ -1,62 +1,62 @@
 function getData() {
-    let input = JSON.parse(document.getElementsByTagName('textarea')[0].value);
+    let input = JSON.parse(document.querySelector('textarea').value);
+    let pplIn = document.querySelector('#peopleIn p');
+    let blackListP = document.querySelector('#blacklist p');
+    let pplOut = document.querySelector('#peopleOut p');
+    let lastElement = input.pop();
 
-    let peopleInSection = document.querySelector('#peopleIn p');
-    let peopleOutSection = document.querySelector('#peopleOut p');
-    let blacklistSection = document.querySelector('#blacklist p');
+    let peopleIn = [];
+    let peopleOut = [];
+    let blackList = [];
 
-    let peopleInList = [];
-    let peopleOutList = [];
-    let blacklist = [];
+    for (let person of input) {
+        let action = person.action;
 
-    for (let i = 0; i < input.length - 1; i++) {
-        let currentPerson = {
-            firstName: input[i].firstName,
-            lastName: input[i].lastName
+        let currentName = {
+            firstName: person.firstName,
+            lastName: person.lastName
         };
 
-        let action = input[i].action;
-
         if (action === 'peopleIn') {
-            let personIndex = blacklist.findIndex(p =>
-                p.firstName === currentPerson.firstName
-                && p.lastName === currentPerson.lastName);
-
-            if (personIndex === -1) {
-                peopleInList.push(currentPerson);
+            if (!blackList.find(p => p.firstName === currentName.firstName && p.lastName === currentName.lastName)) {
+                peopleIn.push(currentName);
             }
-        }
-
-        if (action === 'peopleOut' || action === 'blacklist') {
-            if (action === 'blacklist') {
-                blacklist.push(currentPerson);
+        } else if (action === 'peopleOut') {
+            if (peopleIn.find(p => p.firstName === currentName.firstName && p.lastName === currentName.lastName)) {
+                let pplIndexInPeopleInArray = peopleIn.findIndex(p => p.firstName === currentName.firstName && p.lastName === currentName.lastName);
+                peopleIn.splice(pplIndexInPeopleInArray, 1);
+                peopleOut.push(currentName);
             }
-
-            let personIndex = peopleInList.findIndex(p =>
-                p.firstName === currentPerson.firstName
-                && p.lastName === currentPerson.lastName);
-
-            if (personIndex !== -1) {
-                peopleInList.splice(personIndex, 1);
-                peopleOutList.push(currentPerson);
+        } else if (action === 'blacklist') {
+            if (peopleIn.find(p => p.firstName === currentName.firstName && p.lastName === currentName.lastName)) {
+                let pplIndexInPeopleInArray = peopleIn.findIndex(p => p.firstName === currentName.firstName && p.lastName === currentName.lastName);
+                peopleIn.splice(pplIndexInPeopleInArray, 1);
+                peopleOut.push(currentName);
             }
+            blackList.push(currentName);
         }
     }
 
-    let sortCriteria = input[input.length - 1]["criteria"];
-    let selectedSection = input[input.length - 1]["action"];
+    let output = {};
 
-    if (sortCriteria === 'firstName' || sortCriteria === 'lastName') {
-        if (selectedSection === 'peopleIn') {
-            peopleInList.sort((a, b) => a[sortCriteria].localeCompare(b[sortCriteria]));
-        } else if (selectedSection === 'peopleOut') {
-            peopleOutList.sort((a, b) => a[sortCriteria].localeCompare(b[sortCriteria]));
-        } else if (selectedSection === 'blacklist') {
-            blacklist.sort((a, b) => a[sortCriteria].localeCompare(b[sortCriteria]));
-        }
+    output['peopleIn'] = peopleIn;
+    output['peopleOut'] = peopleOut;
+    output['blacklist'] = blackList;
+
+    if (lastElement.action !== '' && lastElement.criteria !== '') {
+        let criteria = lastElement.criteria;
+        output[lastElement.action] = output[lastElement.action].sort((a, b) => a[criteria].localeCompare(b[criteria]));
     }
 
-    peopleInList.forEach(x => peopleInSection.textContent += JSON.stringify(x) + ' ');
-    peopleOutList.forEach(x => peopleOutSection.textContent += JSON.stringify(x) + ' ');
-    blacklist.forEach(x => blacklistSection.textContent += JSON.stringify(x) + ' ');
+    pplIn.textContent = output.peopleIn
+        .map(x => JSON.stringify(x))
+        .join(' ');
+
+    pplOut.textContent = output.peopleOut
+        .map(x => JSON.stringify(x))
+        .join(' ');
+
+    blackListP.textContent = output.blacklist
+        .map(x => JSON.stringify(x))
+        .join(' ');
 }

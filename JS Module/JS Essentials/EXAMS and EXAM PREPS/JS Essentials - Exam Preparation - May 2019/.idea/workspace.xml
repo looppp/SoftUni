@@ -14,10 +14,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Plasma Giants/Plasma Giands.js">
+        <entry file="file://$PROJECT_DIR$/Face Control/03. Face Control_Скелет/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="69" column="1" lean-forward="true" selection-end-line="71" selection-end-column="50" />
+            <state relative-caret-position="765">
+              <caret line="45" column="67" lean-forward="true" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Face Control/03. Face Control_Скелет/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="74" lean-forward="true" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -39,10 +48,11 @@
       <list>
         <option value="$PROJECT_DIR$/Courses Prices/Courses Prices.js" />
         <option value="$PROJECT_DIR$/Plasma Giants/Plasma Giands.js" />
+        <option value="$PROJECT_DIR$/Face Control/03. Face Control_Скелет/scripts/app.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="163" />
     <option name="y" value="-25" />
     <option name="width" value="1348" />
@@ -61,6 +71,24 @@
             <path>
               <item name="JS Essentials - Exam Preparation - May 2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="JS Essentials - Exam Preparation - May 2019" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS Essentials - Exam Preparation - May 2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS Essentials - Exam Preparation - May 2019" type="462c0819:PsiDirectoryNode" />
+              <item name="Face Control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS Essentials - Exam Preparation - May 2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS Essentials - Exam Preparation - May 2019" type="462c0819:PsiDirectoryNode" />
+              <item name="Face Control" type="462c0819:PsiDirectoryNode" />
+              <item name="03. Face Control_Скелет" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS Essentials - Exam Preparation - May 2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS Essentials - Exam Preparation - May 2019" type="462c0819:PsiDirectoryNode" />
+              <item name="Face Control" type="462c0819:PsiDirectoryNode" />
+              <item name="03. Face Control_Скелет" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JS Essentials - Exam Preparation - May 2019" type="b2602c69:ProjectViewProjectNode" />
@@ -116,19 +144,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565035297472</updated>
-      <workItem from="1565035298563" duration="3165000" />
+      <workItem from="1565035298563" duration="6236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3165000" />
+    <option name="totallyTimeSpent" value="6236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17228661" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17228661" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
@@ -137,7 +164,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32998884" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32998884" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -162,6 +189,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="69" column="1" lean-forward="true" selection-end-line="71" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Face Control/03. Face Control_Скелет/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="74" lean-forward="true" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Face Control/03. Face Control_Скелет/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="67" lean-forward="true" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
         </state>
       </provider>
     </entry>
