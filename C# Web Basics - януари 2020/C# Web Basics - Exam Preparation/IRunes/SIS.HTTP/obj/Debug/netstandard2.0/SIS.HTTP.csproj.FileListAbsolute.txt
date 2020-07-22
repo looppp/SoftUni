@@ -1,0 +1,9 @@
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.HTTP\bin\Debug\netstandard2.0\SIS.HTTP.deps.json
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.HTTP\bin\Debug\netstandard2.0\SIS.HTTP.dll
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.HTTP\bin\Debug\netstandard2.0\SIS.HTTP.pdb
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.HTTP\obj\Debug\netstandard2.0\SIS.HTTP.csprojAssemblyReference.cache
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.HTTP\obj\Debug\netstandard2.0\SIS.HTTP.AssemblyInfoInputs.cache
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.HTTP\obj\Debug\netstandard2.0\SIS.HTTP.AssemblyInfo.cs
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.HTTP\obj\Debug\netstandard2.0\SIS.HTTP.csproj.CoreCompileInputs.cache
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.HTTP\obj\Debug\netstandard2.0\SIS.HTTP.dll
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.HTTP\obj\Debug\netstandard2.0\SIS.HTTP.pdb

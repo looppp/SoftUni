@@ -1,0 +1,12 @@
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.MvcFramework.deps.json
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.MvcFramework.dll
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.MvcFramework.pdb
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.HTTP.dll
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.HTTP.pdb
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.csprojAssemblyReference.cache
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.AssemblyInfoInputs.cache
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.AssemblyInfo.cs
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.csproj.CoreCompileInputs.cache
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.csproj.CopyComplete
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.dll
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\IRunes\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.pdb
