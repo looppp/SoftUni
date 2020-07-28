@@ -3,6 +3,7 @@ using Andreys.Models;
 using Andreys.ViewModels.Products;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Andreys.Services
@@ -35,5 +36,33 @@ namespace Andreys.Services
 
             return product.Id;
         }
+
+        public void DeleteById(int id)
+        {
+            var itemForDelete = GetById(id);
+            dbContext.Products.Remove(itemForDelete);
+            dbContext.SaveChanges();
+        }
+
+        public Product GetById(int id)
+        {
+            return dbContext.Products.FirstOrDefault(x => x.Id == id);
+        }
+
+        public IEnumerable<Product> GetProducts()
+        {
+            var productList = dbContext.Products.Select(x => new Product
+            {
+                Id = x.Id,
+                Name = x.Name,
+                ImageUrl = x.ImageUrl,
+                Price = x.Price,
+                
+            }).ToArray();
+
+            return productList;
+        }
+
+
     }
 }

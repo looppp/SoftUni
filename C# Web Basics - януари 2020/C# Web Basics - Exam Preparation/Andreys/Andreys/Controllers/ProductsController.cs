@@ -33,5 +33,23 @@ namespace Andreys.Controllers
 
             return this.View();
         }
+
+        public HttpResponse Details(int id)
+        {
+            if (this.IsUserLoggedIn())
+            {
+                var products = productsService.GetById(id);
+                return this.View(products, "Details");
+            }
+
+            return this.View();
+        }
+
+        public HttpResponse Delete(int id)
+        {
+            productsService.DeleteById(id);
+            return this.Redirect("/");
+
+        }
     }
 }

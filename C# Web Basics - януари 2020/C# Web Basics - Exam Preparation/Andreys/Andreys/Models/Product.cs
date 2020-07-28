@@ -14,7 +14,6 @@ namespace Andreys.Models
         [Required]
         public string Name { get; set; }
 
-        [MaxLength(10)]
         [Required]
         public string Description { get; set; }
 
