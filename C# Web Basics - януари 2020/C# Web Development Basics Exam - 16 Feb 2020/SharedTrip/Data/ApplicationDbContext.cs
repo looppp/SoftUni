@@ -25,6 +25,7 @@
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<UserTrip>().HasKey(p => new { p.TripId, p.UserId });
         }
     }
 }

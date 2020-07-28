@@ -90,8 +90,11 @@ C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Develo
 C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics Exam - 16 Feb 2020\SharedTrip\obj\Debug\netcoreapp3.1\SharedTrip.csprojAssemblyReference.cache
 C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics Exam - 16 Feb 2020\SharedTrip\obj\Debug\netcoreapp3.1\SharedTrip.AssemblyInfoInputs.cache
 C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics Exam - 16 Feb 2020\SharedTrip\obj\Debug\netcoreapp3.1\SharedTrip.AssemblyInfo.cs
-C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics Exam - 16 Feb 2020\SharedTrip\obj\Debug\netcoreapp3.1\SharedTrip.csproj.CoreCompileInputs.cache
 C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics Exam - 16 Feb 2020\SharedTrip\obj\Debug\netcoreapp3.1\SharedTrip.csproj.CopyComplete
 C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics Exam - 16 Feb 2020\SharedTrip\obj\Debug\netcoreapp3.1\SharedTrip.dll
 C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics Exam - 16 Feb 2020\SharedTrip\obj\Debug\netcoreapp3.1\SharedTrip.pdb
 C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics Exam - 16 Feb 2020\SharedTrip\obj\Debug\netcoreapp3.1\SharedTrip.genruntimeconfig.cache
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics Exam - 16 Feb 2020\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics Exam - 16 Feb 2020\SharedTrip\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics Exam - 16 Feb 2020\SharedTrip\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics Exam - 16 Feb 2020\SharedTrip\obj\Debug\netcoreapp3.1\SharedTrip.csproj.CoreCompileInputs.cache

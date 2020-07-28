@@ -6,6 +6,7 @@ namespace SharedTrip.Models
 {
     public class Trip
     {
+        [Key]
         public string Id { get; set; }
 
         [Required]
