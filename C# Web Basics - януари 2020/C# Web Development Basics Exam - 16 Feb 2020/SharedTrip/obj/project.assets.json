@@ -5289,19 +5289,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chery\\.nuget\\packages\\": {}
+    "C:\\Users\\Cherybo\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chery\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SharedTrip\\SharedTrip.csproj",
+      "projectUniqueName": "C:\\Users\\Cherybo\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SharedTrip\\SharedTrip.csproj",
       "projectName": "SharedTrip",
-      "projectPath": "C:\\Users\\chery\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SharedTrip\\SharedTrip.csproj",
-      "packagesPath": "C:\\Users\\chery\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chery\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SharedTrip\\obj\\",
+      "projectPath": "C:\\Users\\Cherybo\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SharedTrip\\SharedTrip.csproj",
+      "packagesPath": "C:\\Users\\Cherybo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cherybo\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SharedTrip\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\chery\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cherybo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5314,8 +5318,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\chery\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.MvcFramework\\SIS.MvcFramework.csproj": {
-              "projectPath": "C:\\Users\\chery\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.MvcFramework\\SIS.MvcFramework.csproj"
+            "C:\\Users\\Cherybo\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.MvcFramework\\SIS.MvcFramework.csproj": {
+              "projectPath": "C:\\Users\\Cherybo\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.MvcFramework\\SIS.MvcFramework.csproj"
             }
           }
         }
@@ -5349,7 +5353,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

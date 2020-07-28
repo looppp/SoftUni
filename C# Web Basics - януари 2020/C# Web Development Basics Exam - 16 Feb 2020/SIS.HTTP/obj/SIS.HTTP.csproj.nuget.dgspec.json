@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chery\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.HTTP\\SIS.HTTP.csproj": {}
+    "C:\\Users\\Cherybo\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.HTTP\\SIS.HTTP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chery\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.HTTP\\SIS.HTTP.csproj": {
+    "C:\\Users\\Cherybo\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.HTTP\\SIS.HTTP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chery\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.HTTP\\SIS.HTTP.csproj",
+        "projectUniqueName": "C:\\Users\\Cherybo\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.HTTP\\SIS.HTTP.csproj",
         "projectName": "SIS.HTTP",
-        "projectPath": "C:\\Users\\chery\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.HTTP\\SIS.HTTP.csproj",
-        "packagesPath": "C:\\Users\\chery\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chery\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.HTTP\\obj\\",
+        "projectPath": "C:\\Users\\Cherybo\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.HTTP\\SIS.HTTP.csproj",
+        "packagesPath": "C:\\Users\\Cherybo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cherybo\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\C# Web Development Basics Exam - 16 Feb 2020\\SIS.HTTP\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\chery\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cherybo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +58,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
