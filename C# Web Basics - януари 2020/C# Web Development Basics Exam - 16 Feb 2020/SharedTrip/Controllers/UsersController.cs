@@ -43,7 +43,7 @@
             if (userId != null)
             {
                 this.SignIn(userId);
-                return this.Redirect("/home/index");
+                return this.Redirect("/Trips/All");
             }
             return this.Redirect("/Users/Login");
         }
