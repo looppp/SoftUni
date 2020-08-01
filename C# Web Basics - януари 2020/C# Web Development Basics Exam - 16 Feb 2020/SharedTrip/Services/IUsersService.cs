@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SharedTrip.Services
+﻿namespace SharedTrip.Services
 {
-    public interface IUserService
+    public interface IUsersService
     {
         string GetUserId(string username, string password);
 
@@ -13,7 +9,5 @@ namespace SharedTrip.Services
         bool UsernameExists(string username);
 
         bool EmailExists(string email);
-
-        string GetUsername(string id);
     }
 }
