@@ -16,7 +16,7 @@ function roadRadar([speed, area]) {
         let overspeed = speed - limit;
 
         if (overspeed <= 0){
-            return false;
+            return ;
         } else if (overspeed > 0 && overspeed <= 20){
             return "speeding";
         } else if (overspeed > 20 && overspeed <= 40) {
