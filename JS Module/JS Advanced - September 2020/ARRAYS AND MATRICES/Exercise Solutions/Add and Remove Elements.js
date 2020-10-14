@@ -1,19 +1,16 @@
 function solveElements(array){
-    let number = 0;
-    array.forEach(element => {
-        if(element === 'add'){
-            number++;
-            console.log(number);
-        } else if(element === 'remove'){
-            number--;
-            if(number >= 1){
-                console.log(number);
-            } else {
-                console.log('Empty');
-            }
+    let output = [];
+    let number = 1;
+    array.forEach(comand => {
+        if(comand === 'add'){
+            output.push(number);
+        } else if(comand === 'remove'){
+            output.pop();
         }
+
+        number++
     });
-    
+    output.length == 0 ? console.log('Empty') : console.log(output.join("\n"));
 }
 
 solveElements(['add', 
