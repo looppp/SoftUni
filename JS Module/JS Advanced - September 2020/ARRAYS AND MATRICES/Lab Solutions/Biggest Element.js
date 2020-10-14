@@ -1,9 +1,6 @@
 function solveBiggestElement(matrix) {
     let singleArray = [];
-    function printRow(row) {
-        row.forEach(x => singleArray.push(x));
-    }
-    matrix.forEach(printRow);
+    matrix.forEach(x => x.forEach(z => singleArray.push(z)));
     return Math.max(...singleArray);
 }
 
