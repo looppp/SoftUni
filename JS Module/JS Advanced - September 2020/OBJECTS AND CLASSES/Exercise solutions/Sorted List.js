@@ -12,16 +12,22 @@ class List{
     }
 
     remove(index){
-        if(this.size <= index + 1){
-            this.list.remove(index);
+        if (index < 0 || index >= this.list.length) {
+            throw new Error(`Index doesn't exist`);
+        } else {
+            this.list.splice(index, 1);
             this.size--;
+            return;
         }
-        this.list.sort((a, b) => a - b);
        
     }
 
     get(index){
+        if (index < 0 || index >= this.list.length) {
+            throw new Error(`Index doesn't exist`);
+        } else {
         return this.list[index];
+        }
     }
 }
 
