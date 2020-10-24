@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "e6RwW8OjKg6g9Zn7e6J5d817PRStX7CNTX09svcd4A81k7MI739Hp2dHxUf/72ZyrY5qz6R/L03nJ515rrhmBw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Cherybo\\Desktop\\SoftUni\\C# Web Basics - януари 2020\\Exam Preparation\\SUS.HTTP\\SUS.HTTP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
