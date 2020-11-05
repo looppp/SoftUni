@@ -1,0 +1,6 @@
+I test from terminal.
+1.Open terminal(CTRL+J);
+2.Type npm test and press ENTER.
+
+NOTE: I have included everything for the configuration. 
+      You don't have to install or change anything, just run in the terminal. :)
