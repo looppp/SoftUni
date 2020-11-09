@@ -5,8 +5,6 @@ function getInfo() {
     let validBusses = ['1287', '1308', '1327', '2334'];
     let busesUl = document.getElementById('buses');
 
-    const httpRequest = new XMLHttpRequest();
-
     if (!validBusses.includes(stopId.value)) {
         stopInfo.textContent = 'Error';
     }
