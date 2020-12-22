@@ -1,0 +1,9 @@
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics - 25 October 2020\SUS.HTTP\bin\Debug\netstandard2.0\SUS.HTTP.deps.json
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics - 25 October 2020\SUS.HTTP\bin\Debug\netstandard2.0\SUS.HTTP.dll
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics - 25 October 2020\SUS.HTTP\bin\Debug\netstandard2.0\SUS.HTTP.pdb
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics - 25 October 2020\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.csprojAssemblyReference.cache
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics - 25 October 2020\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.AssemblyInfoInputs.cache
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics - 25 October 2020\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.AssemblyInfo.cs
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics - 25 October 2020\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.csproj.CoreCompileInputs.cache
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics - 25 October 2020\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.dll
+C:\Users\Cherybo\Desktop\SoftUni\C# Web Basics - януари 2020\C# Web Development Basics - 25 October 2020\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.pdb
