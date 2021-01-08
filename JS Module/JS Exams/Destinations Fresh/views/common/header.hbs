@@ -1,0 +1,21 @@
+<nav>
+    <div class="left-container">
+        <ul>
+            {{#if user}}
+            <li><a href="/">Home</a></li>
+            <li><a href="/destinations">Destinations</a></li>
+            <li><a href="/create">Add +</a></li>
+            </div>
+            <div class="right-container">
+                <span>Welcome, {{user.email}} </span>
+                <a href="/logout" class="log-out">Logout</a>
+            </div>
+            {{else}}
+            <li><a href="/home">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+            {{/if}}
+        </ul>
+    </div>
+
+</nav>

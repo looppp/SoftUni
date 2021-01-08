@@ -1,0 +1,20 @@
+{{>header}}
+<section id="viewCatalog" class="background-img">
+    <div class="added-destinations">
+        {{#if user}}
+         {{#each destinations}}
+        {{>destination}}
+            {{else}}
+        <div class="guest">
+            No destinations possible! Please sign in...
+        </div>
+        {{/each}} 
+        {{else}}
+        <div class="guest">
+            No destinations possible! Please sign in...
+        </div>
+        {{/if}}
+    </div>
+
+</section>
+{{>footer}}
