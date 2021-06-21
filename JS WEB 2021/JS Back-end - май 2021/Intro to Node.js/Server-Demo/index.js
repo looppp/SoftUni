@@ -1,22 +1,31 @@
 const http = require('http');
 
+const router = require('./router');
+
+const homeController = require('./controllers/homeController')
+const aboutController = require('./controllers/aboutController')
+const catalogController = require('./controllers/catalogController');
+const createController = require('./controllers/createController');
+const deleteController = require('./controllers/deleteController');
+
+router.get('/', homeController);
+router.get('/about', aboutController);
+router.get('/catalog', catalogController);
+
+router.post('/create', createController);
+
+router.get('/delete', deleteController);
+
 const port = 3000;
 const server = http.createServer(requestHandler);
 
-const html = `
-<html>
-     <body>
-        <h1>Hello World!</h1>
-        <p>This is my Simple Website</p>
-        <a><iframe width="1000" height="333" src="https://www.youtube.com/embed/l9YxTXDiiFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
-     </body>
-</html>`;
+
 
 function requestHandler(req, res){
+    const url = new URL(req.url, 'http://localhost');
     console.log('>>> ' + req.method + ' ' + req.url);
-    res.write(html);
-    res.end();
-    
+    const handler = router.match(req.method, url.pathname);
+    handler(req, res);
 }
 
 server.listen(port, () => console.log('Server is Running on port ' + port));
