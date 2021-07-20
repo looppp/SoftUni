@@ -3,7 +3,15 @@ const fs = require('fs');
 let data = {};
 
 async function init() {
-    data = JSON.parse(await fs.readFile('../data/books.json'))
+    data = JSON.parse(await fs.readFile('../data/books.json'));
+
+    return (req, res, next) => {
+        req.storage = {
+            getAll,
+            getById
+        };
+        next();
+    }
 }
 
 function getAll(){
@@ -14,8 +22,4 @@ function getById(id) {
     return data[id];
 }
 
-module.exports = {
-    init,
-    getAll,
-    getById
-};
+module.exports = init;
