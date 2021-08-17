@@ -1,3 +1,4 @@
+const { query } = require('express');
 const fs = require('fs/promises');
 const uniqid = require('uniqid');
 
@@ -27,16 +28,32 @@ async function init() {
     }
 }
 
-async function getAll() {
-    return Object
+async function getAll(query) {
+    let cubes = Object
         .entries(data)
-        .map(([id, v]) => Object.assign({}, {
-            id
-        }, v));
+        .map(([id, v]) => Object.assign({}, {id}, v));
+
+        //filter cubes by query params
+        if(query.search) {
+            cubes = cubes.filter(c => c.name.toLowerCase().includes(query.search.toLowerCase()));
+        }
+        if(query.from) {
+            cubes = cubes.filter(c => c.difficultyLevel >= Number(query.from));
+        }
+        if(query.to) {
+            cubes = cubes.filter(c => c.difficultyLevel <= Number(query.to));
+        }
+
+        return cubes;
 }
 
 async function getbyId(id) {
-    return data[id];
+    const cube = data[id];
+    if(cube){
+        return Object.assign({}, {id}, cube);
+    } else {
+        return undefined;
+    }
 }
 
 async function create(cube) {

@@ -4,12 +4,12 @@ module.exports = {
             title: 'Create Cube'
         });
     },
-    post: async (req, res) => {
+    postCreate: async (req, res) => {
         const cube = {
             name: req.body.name,
             description: req.body.description,
             imageUrl: req.body.imageUrl,
-            difficultyLevel: req.body.difficultyLevel
+            difficultyLevel: Number(req.body.difficultyLevel)
         }
 
         await req.storage.create(cube);

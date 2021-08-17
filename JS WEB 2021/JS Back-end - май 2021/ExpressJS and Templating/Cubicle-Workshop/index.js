@@ -11,9 +11,11 @@ const { init: storage } = require('./models/storage')
 
 const { about } = require('./controllers/about');
 const { catalog } = require('./controllers/catalog');
-const { create, post } = require('./controllers/create');
+const { create, postCreate } = require('./controllers/create');
 const { details } = require('./controllers/details');
 const { notFound } = require('./controllers/notFound');
+const { postEdit } = require('./controllers/edit');
+const { edit } = require('./controllers/edit');
 
 start();
 
@@ -33,7 +35,10 @@ async function start(){
     app.get('/details/:id', details);
     app.get('/about', about);
     app.get('/create', create);
-    app.post('/create', post);
+    app.post('/create', postCreate);
+
+    app.get('/edit/:id', edit)
+    app.post('/edit/:id', postEdit)
 
     app.all('*', notFound);
 
