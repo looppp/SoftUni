@@ -15,7 +15,6 @@ client.connect(async (err) => {
 
     const db = client.db('test');
     const collection = db.collection('cats');
-    collection.insertOne({ name: "Gogata" });
     const data = await collection.find({}).toArray();
     console.log(data);
 });
