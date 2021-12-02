@@ -9,11 +9,11 @@ const userService = require('../services/user')
 module.exports = () => (req, res, next) => {
         req.auth = {
             async register(username, password){
-                const token = register(username, password)
+                const token = await register(username, password)
                 res.cookie(COOKIE_NAME, token);
             },
             async login(username, password) {
-                const token = login(username, password)
+                const token = await login(username, password)
                 res.cookie(COOKIE_NAME, token);
             },
             logout() {
