@@ -58,12 +58,7 @@
 	.single-team-item {
 	    margin-bottom: 30px;
 	}
-	table.cart-table {
-	    margin-bottom: 50px;
-	}
-	.order-details-wrap {
-	    margin-top: 50px;
-	}
+	
 	.contact-form form p input[type=text], 
 	.contact-form form p input[type=tel], 
 	.contact-form form p input[type=email] {
@@ -83,15 +78,7 @@
 		top: 30%;
 	}
 
-	.comment-template form p input[type=text], 
-	.comment-template form p input[type=email] {
-	    width: 100%;
-	}
-
-	.comment-template form p input[type=email] {
-	    margin-top: 15px;
-	    margin-left: 0;
-	}
+	
 	.sidebar-section {
 	    margin-left: 0;
 	    margin-top: 50px;
@@ -170,34 +157,16 @@
 	nav.main-menu {
 	    display: none;
 	}
-	table.order-details {
-	    width: 100%;
-	}
+	
 	.contact-form-box h4 i {
 	    left: -7%;
 	}
-	.single-product-content h3 {
-	    font-size: 20px;
-	    font-weight: 500;
-	    line-height: 1.6;
-	}
 
-	.single-product-content {
-	    margin-left: 15px;
-	}
-	a.mobile-hide.search-bar-icon {
-	    display: none!important;
-	}
+
 	.mobile-show {
 		display: block!important;
 	}
-	a.mobile-show.search-bar-icon {
-	    position: absolute;
-	    right: 60px;
-	    top: 22px;
-	    z-index: 999;
-	    color: #fff;
-	}
+	
 
 }
 
