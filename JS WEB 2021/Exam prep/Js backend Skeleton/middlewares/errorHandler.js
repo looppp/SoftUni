@@ -1,8 +1,8 @@
 const errorhandler = (err, req, res, next) => {
-    let messsage = err.messsage || 'Something went whrong'
-    let status = err.status || 500;
-
-    // TODO add page to render
+    err.message = err.message || 'Something went whrong'
+    err.status = err.status || 500;
+    
+    res.status(err.status).render('home', {error: err});
 }
 
 module.exports = errorhandler;
