@@ -25,16 +25,15 @@ router.get('/register', (req, res, ) => {
     res.render('register')
 });
 
-router.post('/register',
-    (req, res, next) => {
-        const {
-            username,
-            password
-        } = req.body;
+router.post('/register', (req, res, next) => {
+        const { username, password, repeatPassword } = req.body;
+
+        if(password != repeatPassword){
+           return res.render('register', { error: {message: 'Passwords should match'}})
+        }
 
         authService.register(username, password)
             .then(createdUser => {
-                console.log(createdUser);
                 res.redirect('/auth/login');
             })
             .catch(next) // or .catch(next)

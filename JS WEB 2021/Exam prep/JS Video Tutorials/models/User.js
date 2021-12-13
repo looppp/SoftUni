@@ -6,13 +6,19 @@ const userScheme = new mongoose.Schema({
     username: {
         type: String,
         required: true,
-        Unique: true
+        Unique: true,
+        minlength: 5,
+
     },
     password: {
         type: String,
         required: true,
         minlength: 5,
-    }
+    },
+    enrolledCourses: [{
+        type: mongoose.Types.ObjectId,
+        ref: 'Course'
+    }]
 });
 
 userScheme.pre('save', function(next) {
