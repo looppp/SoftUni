@@ -9,7 +9,7 @@ const courseController = require('./controllers/courseController');
 
 router.use('/', homeController);
 router.use('/auth', authController);
-router.use('/courses', isAuth, courseController)
+router.use('/course', isAuth, courseController)
 //user controllers
 
 module.exports = router;
