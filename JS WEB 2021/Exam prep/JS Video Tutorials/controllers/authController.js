@@ -28,6 +28,8 @@ router.get('/register', (req, res, ) => {
 router.post('/register', (req, res, next) => {
         const { username, password, repeatPassword } = req.body;
 
+        console.log(req.body);
+
         if(password != repeatPassword){
            return res.render('register', { error: {message: 'Passwords should match'}})
         }
