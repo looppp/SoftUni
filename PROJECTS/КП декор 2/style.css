@@ -6,7 +6,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(img/cover.jpg);
+    background-image: url(img/cover.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -35,12 +35,13 @@ nav img{
     text-decoration: none;
     font-size: 20px;
 }
+
 /*hover*/
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: #fa2617;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -75,6 +76,14 @@ nav img{
     background: transparent;
     position: relative;
     margin-top: 25px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.hero-btn:hover{
+  -webkit-box-shadow: -1px 1px 40px 12px rgba(235,148,33,1);
+  -moz-box-shadow: -1px 1px 40px 12px rgba(235,148,33,1);
+  box-shadow: -1px 1px 40px 12px rgba(235,148,33,1);
 }
 
 nav .fa{
@@ -128,7 +137,6 @@ nav .fa{
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
-    overflow: hidden;
 }
 
 .gallery{
@@ -137,6 +145,7 @@ nav .fa{
     grid-gap: 30px;
 }
 .gallery img{
+    border-radius: 25px;
     width: 100%;
 }
 
@@ -149,14 +158,17 @@ nav .fa{
     margin-top: 20%;
     margin-bottom: 20%;
     justify-content: space-between;
-    background: #fff3f3;
+    background: #ffaa78;
     border-radius: 10px;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+    
 }
 .info-colum:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(87,87,87,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(87,87,87,1);
+  box-shadow: 10px 10px 5px 0px rgba(87,87,87,1);
 }
 h3{
     text-align: center;
@@ -186,7 +198,7 @@ h3{
 
   
   #contact {
-      padding-top: 100px;
+    padding-top: 100px;
     width: 100%;
     height: 100%;
   }
@@ -195,7 +207,7 @@ h3{
     text-align: center;
     margin: 0 auto;
     padding: 40px 0;
-    font: 300 30px 'Oswald', sans-serif;
+    font: 300 40px 'Oswald', sans-serif;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 6px;
@@ -256,11 +268,15 @@ h3{
   .direct-contact-container {
     max-width: 400px;
   }
-  
+
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }
+
   /* Location, Phone, Email Section */
   .contact-list {
     list-style-type: none;
-    margin-left: -30px;
+    margin-left: 50px;
     padding-right: 20px;
   }
   
@@ -310,7 +326,7 @@ h3{
   }
   
   .social-media-list li a {
-    color: #fff;
+    color: rgb(255, 255, 255);
   }
   
   .social-media-list li {
@@ -320,7 +336,19 @@ h3{
     transition: all .2s ease-in-out;
   }
   
-  
+  .contact-icon-finish{
+    padding: 20px;
+    font-size: 50px;
+    width: 20px;
+    text-decoration: none;
+    margin: 5px 111px;
+    color: blue;
+  }
+
+  .contact-icon{
+    margin: 5px 22px;
+
+  }
   
   .social-media-list li:hover {
     background-color: #fff; 
@@ -359,6 +387,10 @@ h3{
       margin: 0 auto;
     }  
     
+    .contact-icon-finish{
+       margin: 0 auto;
+    }
+
     .direct-contact-container {
       margin-top: 60px;
       max-width: 300px;
@@ -386,6 +418,9 @@ h3{
       margin: 0 auto;
     }
    
+    .contact-icon-finish{
+      margin: 0 auto;
+   }
     
     .name, .email, textarea {
       width: 280px;
@@ -416,5 +451,9 @@ h3{
     .send-button {
       width: 99%;
     }
+
+    .contact-icon-finish{
+      margin: 0 auto;
+   }
   }
 
