@@ -22,7 +22,7 @@
             <a href="index.html"><img src="img/logo.jpg"></a>
             
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times"></i>
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>    
                     <li><a href="#home">Начало</a></li>
                     <li><a href="#work">Услуги</a></li>
@@ -32,18 +32,19 @@
                 </ul>
             </div>
            
+            <i class="fa fa-chevron-circle-down" onclick="showMenu()"></i>
         </nav>
 
         </div>
 
-      
+        <div class="text-box">
+            <h1>Всичко за Вашия дом</h1>
+            <h1>Кърпачев Декор</h1>
+            <p>Дългогодишен опит в страната и чужбина.
+                Качество и чистота гарантирани.</p>
+        </div>
     </section>
-    <div class="text-box">
-        <h1>Всичко за Вашия дом</h1>
-        <h1>Кърпачев Декор</h1>
-        <p>Дългогодишен опит в страната и чужбина.
-            Качество и чистота гарантирани.</p>
-    </div>
+    
 
     <div class="content">
     <section class="our-work" id="work">
@@ -215,6 +216,9 @@
         var navLinks = document.getElementById("navLinks");
         function showMenu() {
             navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
         }
     </script>
 </div>
