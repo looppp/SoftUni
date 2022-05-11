@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+<title>Кърпачев Декор</title>
+
+<body>
+    <header>
+        <a class="logo" href="index.html"><img src="img/logo.jpg"></a>
+
+        <ul>
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="puttyPaint.html">Шпакливки и Бои</a></li>
+            <li><a href="insualation.html">Топлоизолации</a></li>
+            <li><a href="decorPaint.html">Декоративни бои</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+            <li><a href="https://www.facebook.com/Vsichkozavashiadom/" target="_blank" class="contact-icon">
+                    <i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+</body>
+
+</html>
