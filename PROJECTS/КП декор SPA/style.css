@@ -31,7 +31,7 @@ nav {
     align-items: center;
 }
 nav img{
-    width: 80px;
+    width: 120px;
 }
 .nav-links{
     flex: 1;
@@ -44,10 +44,10 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    text-shadow: 2px 2px #ff0000;
-    font-size: 20px;
+    text-shadow: 2px 2px #000000;
+    font-size: 25px;
 }
 
 .container{
@@ -79,12 +79,12 @@ nav img{
 
 }
 .text-box h1{
-    font-size: 44px;
+    font-size: 50px;
 }
 .text-box{
-    margin: 10px 0 40px;
-    font-size: 16px;
-    color: rgb(128, 17, 17);
+    margin: -30px 20px 20px;
+    font-size: 20px;
+    color: rgb(3, 0, 0);
 }
 .hero-btn{
     display: inline-block;
@@ -112,7 +112,7 @@ nav .fa{
 
 @media(max-width: 700px){
     .text-box h1{
-        font-size: 20px;
+        font-size: 33px;
     }
     .nav-links ul li{
         display: block;
@@ -135,7 +135,7 @@ nav .fa{
         cursor: pointer;
     }
     .nav-links ul{
-        padding: 30px;
+        padding: 5px;
     }
 }
 
@@ -153,7 +153,6 @@ nav .fa{
 }
 
 .col{
-    flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
@@ -165,7 +164,8 @@ nav .fa{
     grid-gap: 30px;
 }
 .gallery img{
-    border-radius: 25px;
+    border-radius: 10px;
+    height: 100%;
     width: 100%;
 }
 
@@ -175,10 +175,10 @@ nav .fa{
 }
 
 .info-colum{
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     justify-content: space-between;
-    background: #ffaa78;
+    background: #67c7ffe0;
     border-radius: 10px;
     padding: 20px 12px;
     box-sizing: border-box;
@@ -203,7 +203,13 @@ h3{
 .location-map{
     max-width: 100%;
     max-height: 100%;
-    background-color: black;
+    background-image: url(img/contact.jpg);
+    opacity: 0.75;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    
 }
 
 @media(max-width: 700px){
@@ -302,13 +308,13 @@ h3{
   
   .list-item {
     line-height: 4;
-    color: #aaa;
+    color: rgb(255, 255, 255);
   }
   
   .contact-text {
     font: 300 18px 'Lato', sans-serif;
     letter-spacing: 1.9px;
-    color: #bbb;
+    color: rgb(255, 255, 255);
   }
   
   .place {
@@ -324,7 +330,7 @@ h3{
   }
   
   .contact-text a {
-    color: #bbb;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition-duration: 0.2s;
   }
