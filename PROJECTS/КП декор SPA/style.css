@@ -19,9 +19,9 @@ html{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(img/cover.jpeg);
+    background-image: url(img/cover.jpg);
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     position: relative;
 }
 nav {
@@ -31,24 +31,30 @@ nav {
     align-items: center;
 }
 nav img{
-    width: 120px;
+    width: 150px;
 }
 .nav-links{
     flex: 1;
     text-align: right;
 }
-.nav-links ul li{
-    list-style: none;
+.nav-links ul li {
     display: inline-block;
-    position: relative;
-    justify-content: space-between;
-    background: #ce1111e0;
-    border-radius: 15px;
-    padding: 10px 10px;
-    margin: 10px;
-    box-sizing: content-box;
-    transition: 0.5s;
-    
+}
+.nav-links ul li a{
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  justify-content: space-between;
+  background: #ce1111e0;
+  border-radius: 15px;
+  padding: 5px 15px;
+  margin: 10px;
+  box-sizing: content-box;
+  transition: 0.5s;
+  
+}
+ul {
+  list-style-type: none;
 }
 .nav-links ul li a{
     color: rgb(255, 255, 255);
@@ -63,8 +69,8 @@ nav img{
   height: 100%;
 }
 
-.nav-links ul li:hover {
-  background-color: #67c7ffe0;
+.nav-links ul li a:hover {
+  background-color: #f0ff21e0;
 }
 
 .text-box{
@@ -213,7 +219,7 @@ nav .fa{
     margin-top: 10%;
     margin-bottom: 10%;
     justify-content: space-between;
-    background: #67c7ffe0;
+    background: #ce1111e0;
     border-radius: 10px;
     padding: 20px 12px;
     box-sizing: border-box;
