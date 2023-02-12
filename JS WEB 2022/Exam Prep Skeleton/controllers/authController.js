@@ -50,10 +50,12 @@ authController.post('/register', async (req, res) => {
         }
         const token = await register(req.body.username, req.body.password)
 
+        //TODO check if register creates session and change it
         res.cookie('token', token);
         res.redirect('/auth/register');//TODO repalce with redirekt by assignment
     } catch (error) {
 
+        //TODO add's error display to actual template from assignment
         const errors = parseError(error);
         res.render('register', {
             title: 'Register Page',
