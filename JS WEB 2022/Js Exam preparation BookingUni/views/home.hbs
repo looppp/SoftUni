@@ -1,1 +1,13 @@
-<h1>HOME PAGE</h1>
+<section id="viewCatalog" class="background-img">
+  {{#if hotels}}
+  <div class="added-hotels">
+   {{#each hotels}}
+   {{> hotel}}
+   {{/each}}
+  </div>
+  {{else}}
+  <div class="guest">
+                There are no Hotels found...
+  </div>
+  {{/if}}
+</section>
