@@ -2,14 +2,13 @@ const { verifyToken } = require("../services/userService");
 
 module.exports = () => (req, res, next) => {
   const token = req.cookies.token;
-  console.log(token);
   if (token) {
     try {
       const userData = verifyToken(token);
       req.user = userData;
-      res.locals.username = userData.username;
-      console.log("hello there");
+      res.locals.email = userData.email;
     } catch (err) {
+      console.log(err);
       res.clearCookie("token");
       res.redirect("/auth/login");
       return;
