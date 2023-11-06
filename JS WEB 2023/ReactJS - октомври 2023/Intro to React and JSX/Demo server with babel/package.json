@@ -1,0 +1,12 @@
+{
+  "description": "",
+  "scripts": {
+    "build": "npx babel --watch src --out-dir build --presets react-app/prod"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
