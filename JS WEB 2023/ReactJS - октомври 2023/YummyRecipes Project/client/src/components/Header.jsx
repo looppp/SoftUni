@@ -1,16 +1,14 @@
 export default function Header() {
   return (
-    <header className="header">
-      <a href="" className="logo">
-        Logo
-      </a>
-
-      <nav className="navbar">
-        <a href="">Home</a>
-        <a href="">Recipes</a>
-        <a href="">Login</a>
-        <a href="">Register</a>
-        <a href="">Logout</a>
+    <header>
+      <h2 className="logo">Logo</h2>
+      <nav className="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Recipes</a>
+        <a href="#">Contact</a>
+        <button className="btnLogin-popup">Login</button>
+        {/* <button className="btnLogin-popup">Register</button> */}
       </nav>
     </header>
   );
