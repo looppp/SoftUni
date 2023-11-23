@@ -1,23 +1,37 @@
 import { useState } from "react";
 import { createUser } from "../services/userService";
 
-export default function RegisterModal({ hideModal }) {
+const initialForm = {
+  username: "",
+  email: "",
+  password: "",
+};
+
+export default function RegisterModal({ hideModal, showModal }) {
   const [users, setUsers] = useState([]);
+  const [formValues, setFormValues] = useState(initialForm);
+
+  const changeHandler = (e) => {
+    setFormValues((state) => ({
+      ...state,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
   const userCreateHandler = async (e) => {
     e.preventDefault();
 
-    //Get data from the form data
-    const data = Object.fromEntries(new FormData(e.currentTarget));
-
     //Create new user at the server
-    const newUser = await createUser(data);
+    const newUser = await createUser(formValues);
 
     //Add newly created user at the llocal state
     setUsers((state) => [...state, newUser]);
 
-    console.log(users);
+    hideModal();
   };
+
+  //TODO
+  const usernameValidator = () => {};
 
   return (
     <div className="wraper">
@@ -31,21 +45,39 @@ export default function RegisterModal({ hideModal }) {
             <span className="icon">
               <ion-icon name="person"></ion-icon>
             </span>
-            <input type="username" required name="username" />
+            <input
+              required
+              type="text"
+              name="username"
+              value={formValues.username}
+              onChange={changeHandler}
+            />
             <label>Username</label>
           </div>
           <div className="input-box">
             <span className="icon">
               <ion-icon name="mail-open"></ion-icon>
             </span>
-            <input type="email" required name="email" />
+            <input
+              required
+              type="email"
+              name="email"
+              value={formValues.email}
+              onChange={changeHandler}
+            />
             <label>Email</label>
           </div>
           <div className="input-box">
             <span className="icon">
               <ion-icon name="lock-closed"></ion-icon>
             </span>
-            <input type="password" required name="password" />
+            <input
+              required
+              type="password"
+              name="password"
+              value={formValues.password}
+              onChange={changeHandler}
+            />
             <label>Password</label>
           </div>
           <div className="remember-forgot">
@@ -55,13 +87,18 @@ export default function RegisterModal({ hideModal }) {
               Agree to the terms and conditions
             </label>
           </div>
-          <button type="submit" className="btn" onClick={hideModal}>
+          <button type="submit" className="btn">
             Register
           </button>
           <div className="login-register">
             <p>
               Allready have an account?
-              <a href="#" className="login-link">
+              <a
+                onClick={() => {
+                  hideModal(), showModal();
+                }}
+                className="login-link"
+              >
                 Login
               </a>
             </p>

@@ -46,8 +46,18 @@ export default function Header() {
           </button>
         </nav>
       </header>
-      {showLogin && <LoginModal hideModal={hideLoginModal} />}
-      {showRegister && <RegisterModal hideModal={hideRegisterModal} />}
+      {showLogin && (
+        <LoginModal
+          showModal={showRegisterHandler}
+          hideModal={hideLoginModal}
+        />
+      )}
+      {showRegister && (
+        <RegisterModal
+          showModal={showLoginHandler}
+          hideModal={hideRegisterModal}
+        />
+      )}
     </div>
   );
 }

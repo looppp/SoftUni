@@ -1,4 +1,4 @@
-export default function LoginModal({ hideModal }) {
+export default function LoginModal({ hideModal, showModal }) {
   return (
     <div className="overlay-container">
       <div className="wraper">
@@ -36,7 +36,13 @@ export default function LoginModal({ hideModal }) {
             <div className="login-register">
               <p>
                 Don't have an account?
-                <a href="#" className="register-link">
+                <a
+                  href="#"
+                  onClick={() => {
+                    hideModal(), showModal();
+                  }}
+                  className="register-link"
+                >
                   Register
                 </a>
               </p>
