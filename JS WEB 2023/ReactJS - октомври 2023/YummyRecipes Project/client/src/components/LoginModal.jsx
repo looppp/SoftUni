@@ -1,4 +1,13 @@
+import { useState } from "react";
+
+const initialLoginForm = {
+  email: "",
+  password: "",
+};
+
 export default function LoginModal({ hideModal, showModal }) {
+  const [formValues, setFormValues] = useState(initialLoginForm);
+
   return (
     <div className="overlay-container">
       <div className="wraper">

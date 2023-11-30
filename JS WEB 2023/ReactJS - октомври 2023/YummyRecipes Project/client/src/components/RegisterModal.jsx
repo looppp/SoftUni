@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createUser } from "../services/userService";
 
-const initialForm = {
+const initialRegisterForm = {
   username: "",
   email: "",
   password: "",
@@ -9,7 +9,12 @@ const initialForm = {
 
 export default function RegisterModal({ hideModal, showModal }) {
   const [users, setUsers] = useState([]);
-  const [formValues, setFormValues] = useState(initialForm);
+  const [formValues, setFormValues] = useState(initialRegisterForm);
+  const usernameInputRef = useRef();
+
+  useEffect(() => {
+    usernameInputRef.current.focus();
+  });
 
   const changeHandler = (e) => {
     setFormValues((state) => ({
@@ -47,6 +52,7 @@ export default function RegisterModal({ hideModal, showModal }) {
             </span>
             <input
               required
+              ref={usernameInputRef}
               type="text"
               name="username"
               value={formValues.username}
