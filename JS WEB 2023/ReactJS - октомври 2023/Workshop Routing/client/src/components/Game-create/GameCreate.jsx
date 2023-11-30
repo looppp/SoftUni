@@ -20,9 +20,9 @@ export default function GameCreate() {
   };
 
   return (
-    <section id="create-page" class="auth">
+    <section id="create-page" className="auth">
       <form id="create" onSubmit={createGameSubmitHandler}>
-        <div class="container">
+        <div className="container">
           <h1>Create Game</h1>
           <label htmlFor="leg-title">Legendary title:</label>
           <input
@@ -59,7 +59,7 @@ export default function GameCreate() {
 
           <label htmlFor="summary">Summary:</label>
           <textarea name="summary" id="summary"></textarea>
-          <input class="btn submit" type="submit" value="Create Game" />
+          <input className="btn submit" type="submit" value="Create Game" />
         </div>
       </form>
     </section>
