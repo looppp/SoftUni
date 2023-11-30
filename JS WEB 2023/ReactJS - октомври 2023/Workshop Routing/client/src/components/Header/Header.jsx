@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header>
       <h1>
-        <Link class="home" to="/">
+        <Link className="home" to="/">
           GamesPlay
         </Link>
       </h1>
