@@ -1,4 +1,8 @@
 import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
+
+import * as authService from "./services/authService";
+import AuthContext from "./contexts/authContext";
 
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
@@ -7,18 +11,18 @@ import GameCreate from "./components/Game-create/GameCreate";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import Details from "./components/Details/Details";
-import { useState } from "react";
-import AuthContext from "./contexts/authContext";
 
 function App() {
   const [auth, setAuth] = useState({});
 
-  const loginSubmitHandler = (values) => {
-    console.log(values);
+  const loginSubmitHandler = async (values) => {
+    const result = await authService.login(values.email, values.password);
+
+    console.log(result);
   };
 
   return (
-    <AuthContext.Provider value={loginSubmitHandler}>
+    <AuthContext.Provider value={{ loginSubmitHandler }}>
       <div id="box">
         <Header />
 
