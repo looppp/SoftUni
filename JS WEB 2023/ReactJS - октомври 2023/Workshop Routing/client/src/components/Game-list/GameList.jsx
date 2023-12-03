@@ -7,6 +7,8 @@ export default function GameList() {
 
   useEffect(() => {
     gameService.getAll().then((games) => setGames(games));
+
+    console.log(games);
   }, []);
 
   return (
