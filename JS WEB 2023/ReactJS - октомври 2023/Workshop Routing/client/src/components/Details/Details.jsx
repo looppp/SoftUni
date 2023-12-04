@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import * as gameService from "../../services/gameService";
 import * as commentService from "../../services/commentService";
+import AuthContext from "../../contexts/authContext";
 
 export default function Details() {
+  const { email } = useContext(AuthContext);
   const { gameId } = useParams();
   const [game, setGame] = useState({});
   const [comments, setComments] = useState([]);
@@ -19,11 +21,11 @@ export default function Details() {
 
     const newComment = await commentService.create(
       gameId,
-      formData.get("username"),
       formData.get("comment")
     );
+    console.log(comments);
 
-    setComments((state) => [...state, newComment]);
+    setComments((state) => [...state, { ...newComment, author: { email } }]);
   };
 
   return (
@@ -41,10 +43,10 @@ export default function Details() {
         <div className="details-comments">
           <h2>Comments:</h2>
           <ul>
-            {comments.map((comment) => (
-              <li className="comment" key={comment._id}>
+            {comments.map(({ _id, text }) => (
+              <li className="comment" key={_id}>
                 <p>
-                  {comment.username}: {comment.text}
+                  {email}: {text}
                 </p>
               </li>
             ))}
@@ -63,7 +65,6 @@ export default function Details() {
       <article className="create-comment">
         <label>Add new comment:</label>
         <form className="form" onSubmit={addCommentHandler}>
-          <input type="text" name="username" placeholder="username" />
           <textarea name="comment" placeholder="Comment......"></textarea>
           <input className="btn submit" type="submit" value="Add Comment" />
         </form>
