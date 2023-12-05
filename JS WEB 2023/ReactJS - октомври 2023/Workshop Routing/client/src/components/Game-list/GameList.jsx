@@ -6,9 +6,10 @@ export default function GameList() {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
-    gameService.getAll().then((games) => setGames(games));
-
-    console.log(games);
+    gameService
+      .getAll()
+      .then((games) => setGames(games))
+      .catch((err) => console.log(err));
   }, []);
 
   return (
