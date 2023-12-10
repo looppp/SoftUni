@@ -12,6 +12,18 @@ export const getAll = async () => {
 
   return result;
 };
+export const getLatest = async () => {
+  // const query = new URLSearchParams({
+  //   offset: 0,
+  //   pageSize: 3,
+  // });
+  // const result = await request.get(`${baseUrl}?${query}`);
+
+  //Simple way to do it
+  const result = await request.get(baseUrl);
+
+  return result.sort().reverse().slice(0, 3);
+};
 
 export const getOne = async (gameId) => {
   const result = await request.get(`${baseUrl}/${gameId}`);
