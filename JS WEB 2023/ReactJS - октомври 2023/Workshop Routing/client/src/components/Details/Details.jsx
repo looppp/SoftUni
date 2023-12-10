@@ -1,5 +1,5 @@
 import { useContext, useEffect, useReducer, useState, useMemo } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 import * as gameService from "../../services/gameService";
 import * as commentService from "../../services/commentService";
@@ -14,6 +14,7 @@ export default function Details() {
   const [comments, dispatch] = useReducer(reducer, []);
   const { gameId } = useParams();
   const [game, setGame] = useState({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     gameService.getOne(gameId).then(setGame);
@@ -35,6 +36,17 @@ export default function Details() {
       type: "ADD_COMMENT",
       payload: newComment,
     });
+  };
+
+  const onDeleteButtonClickHandler = async () => {
+    const hasConfirmed = confirm(
+      `Are you sure you want to delete ${game.title}`
+    );
+
+    if (hasConfirmed) {
+      await gameService.remove(gameId);
+      navigate("/games");
+    }
   };
 
   //TODO: temp solution for form reinitialization
@@ -82,9 +94,9 @@ export default function Details() {
             <Link to={pathToUrl(Path.GameEdit, { gameId })} className="button">
               Edit
             </Link>
-            <Link to="/games/:gameId/delete" className="button">
+            <button className="button" onClick={onDeleteButtonClickHandler}>
               Delete
-            </Link>
+            </button>
           </div>
         )}
       </div>
