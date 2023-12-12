@@ -3,8 +3,12 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import AuthContext from "../../contexts/authContext";
 
 export default function Header() {
+  const { isAuthenticated, username } = useContext(AuthContext);
+
   return (
     <Navbar
       expand="lg"
@@ -25,19 +29,26 @@ export default function Header() {
             </Nav.Link>
           </Nav>
           <Nav className="justify-content-end">
-            <Nav.Link as={Link} to={"/login"}>
-              Login
-            </Nav.Link>
-            <Nav.Link as={Link} to={"/register"}>
-              Register
-            </Nav.Link>
-            {/* IfUser */}
-            <Nav.Link as={Link} to={"/create"}>
-              CreateRecipe
-            </Nav.Link>
-            <Nav.Link as={Link} to={"/userPage"}>
-              Hello:Miroslav
-            </Nav.Link>
+            {!isAuthenticated && (
+              <>
+                <Nav.Link as={Link} to={"/login"}>
+                  Login
+                </Nav.Link>
+                <Nav.Link as={Link} to={"/register"}>
+                  Register
+                </Nav.Link>
+              </>
+            )}
+            {isAuthenticated && (
+              <>
+                <Nav.Link as={Link} to={"/create"}>
+                  CreateRecipe
+                </Nav.Link>
+                <Nav.Link as={Link} to={"/userPage"}>
+                  Hello:{username}
+                </Nav.Link>
+              </>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

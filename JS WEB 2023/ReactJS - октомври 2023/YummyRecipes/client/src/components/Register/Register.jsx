@@ -1,59 +1,59 @@
 import { useContext } from "react";
-import loginImg from "../Login/loginImg.jpg";
 import AuthContext from "../../contexts/authContext";
 import useForm from "../../hooks/useForm";
+import registerImg from "../Register/registerImg.jpg";
 
-const loginFormKeys = {
+const registerFormKeys = {
+  Username: "username",
   Email: "email",
   Password: "password",
 };
 
-export default function Login() {
-  const { loginSubmitHandler } = useContext(AuthContext);
-  const { values, onChange, onSubmit } = useForm(loginSubmitHandler, {
-    [loginFormKeys.Email]: "",
-    [loginFormKeys.Password]: "",
-  });
+export default function Register() {
+  const { registerSubmitHandler } = useContext(AuthContext);
 
+  const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
+    [registerFormKeys.Username]: "",
+    [registerFormKeys.Email]: "",
+    [registerFormKeys.Password]: "",
+  });
   return (
     <div
       style={{
-        backgroundImage: `url(${loginImg})`,
+        backgroundImage: `url(${registerImg})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="login template d-flex justify-content-center align-items-center w-100 vh-100 bg-primary"
+      className="register template d-flex justify-content-center align-items-center w-100 vh-100 bg-primary"
     >
       <div className=" p-5 rounded bg-white">
-        <form id="login" onSubmit={onSubmit}>
-          <h1 className="text-center mb-5">Login</h1>
+        <form id="register" onSubmit={onSubmit}>
+          <h1 className="text-center mb-5">Register</h1>
           <div className="mb-2">
             <label htmlFor="email">Email</label>
             <input
+              name="email"
               type="email"
-              id="email"
-              name={loginFormKeys.Email}
               placeholder="Enter Email"
               className="form-control"
               onChange={onChange}
-              value={values[loginFormKeys.Email]}
+              value={values[registerFormKeys.Email]}
             />
           </div>
           <div className="mb-2">
             <label htmlFor="Password">Password</label>
             <input
+              name="password"
               type="Password"
-              id="login-password"
               placeholder="Enter Password"
               className="form-control"
-              name={loginFormKeys.Password}
               onChange={onChange}
-              value={values[loginFormKeys.Password]}
+              value={values[registerFormKeys.Password]}
             />
           </div>
           <div className="d-grid">
-            <button className="btn btn-primary mt-4 mx-5">Login</button>
+            <button className="btn btn-primary mt-4 mx-5">Register</button>
           </div>
         </form>
       </div>
