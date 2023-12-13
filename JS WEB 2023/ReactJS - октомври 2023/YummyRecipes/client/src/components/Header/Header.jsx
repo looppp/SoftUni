@@ -29,6 +29,20 @@ export default function Header() {
             </Nav.Link>
           </Nav>
           <Nav className="justify-content-end">
+            {isAuthenticated && (
+              <>
+                <Nav.Link as={Link} to={"/recipes/create"}>
+                  CreateRecipe
+                </Nav.Link>
+                <Nav.Link as={Link} to={"/logout"}>
+                  Logout
+                </Nav.Link>
+                <p> </p>
+                <Nav.Link as={Link} to={"/userPage"}>
+                  Hello:{username}
+                </Nav.Link>
+              </>
+            )}
             {!isAuthenticated && (
               <>
                 <Nav.Link as={Link} to={"/login"}>
@@ -36,16 +50,6 @@ export default function Header() {
                 </Nav.Link>
                 <Nav.Link as={Link} to={"/register"}>
                   Register
-                </Nav.Link>
-              </>
-            )}
-            {isAuthenticated && (
-              <>
-                <Nav.Link as={Link} to={"/create"}>
-                  CreateRecipe
-                </Nav.Link>
-                <Nav.Link as={Link} to={"/userPage"}>
-                  Hello:{username}
                 </Nav.Link>
               </>
             )}
