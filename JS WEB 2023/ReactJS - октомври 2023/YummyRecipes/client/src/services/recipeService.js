@@ -6,3 +6,8 @@ export const create = async (recipeData) => {
 
   return result;
 };
+
+export const getAll = async () => {
+  const result = await request.get(baseUrl);
+  return result;
+};

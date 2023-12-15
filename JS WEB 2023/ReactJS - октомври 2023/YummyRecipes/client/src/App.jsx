@@ -5,6 +5,7 @@ import Register from "./components/Register/Register";
 import Logout from "./components/Logout/Logout";
 import AllRecipes from "./components/AllRecipes/AllRecipes";
 import CreateRecipe from "./components/Create-recipe/CreateRecipe";
+import RecipeDetails from "./components/recipeDetails/RecipeDetails";
 
 import { Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./contexts/authContext";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/recipes" element={<AllRecipes />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/recipes/create" element={<CreateRecipe />} />
+          <Route path="/recipes/:gameId" element={<RecipeDetails />} />
         </Routes>
       </>
     </AuthProvider>

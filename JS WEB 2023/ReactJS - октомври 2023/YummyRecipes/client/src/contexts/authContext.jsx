@@ -39,6 +39,7 @@ export const AuthProvider = ({ children }) => {
   const createRecipeSubmitHandler = async (values) => {
     const result = await recipeService.create(values);
     navigate("/recipes");
+    return result;
   };
 
   const values = {

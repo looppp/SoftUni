@@ -4,10 +4,10 @@ import createImg from "../Create-recipe/createImg.jpg";
 import AuthContext from "../../contexts/authContext";
 
 const recipeFormKeys = {
-  RecipeName: "recipe-name",
+  RecipeName: "recipeName",
   Description: "description",
-  PreparationTime: "preparation-time",
-  CookingTime: "cooking-time",
+  PreparationTime: "preparationTime",
+  CookingTime: "cookingTime",
   Servings: "servings",
   Ingredients: "ingredients",
   Directions: "directions",

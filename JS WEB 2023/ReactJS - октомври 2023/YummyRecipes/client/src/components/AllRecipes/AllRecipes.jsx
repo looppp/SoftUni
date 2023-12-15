@@ -1,27 +1,51 @@
-import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
+import { useEffect, useState } from "react";
+import * as recipeService from "../../services/recipeService";
+import Recipe from "./Recipe/Recipe";
+import Alert from "react-bootstrap/Alert";
+
 import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 
 export default function AllRecipes() {
+  const [recipes, setRecipes] = useState([]);
+
+  useEffect(() => {
+    recipeService
+      .getAll()
+      .then((recipes) => setRecipes(recipes))
+      .catch((err) => console.log(err));
+
+    console.log(recipes);
+  }, []);
+
   return (
-    <>
-      <Row xs={1} md={4} className="g-4">
-        {Array.from({ length: 8 }).map((_, idx) => (
-          <Col key={idx}>
-            <Card>
-              <Card.Img variant="top" src="https://picsum.photos/33/33" />
-              <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </>
+    <section id="recipies" className=" block recipies-block">
+      {recipes.length > 0 && (
+        <>
+          <Container>
+            <Row>
+              <h1
+                style={{
+                  textAlign: "center",
+                  marginTop: "50px",
+                  marginBottom: "100px",
+                }}
+              >
+                All of our Recipes
+              </h1>
+              {recipes.map((recipe) => (
+                <Recipe key={recipe._id} {...recipe} />
+              ))}
+            </Row>
+          </Container>
+        </>
+      )}
+
+      {recipes.length === 0 && (
+        <Alert variant="info" className="text-center mt-5">
+          <h1>There are no recipies yet!</h1>
+        </Alert>
+      )}
+    </section>
   );
 }
