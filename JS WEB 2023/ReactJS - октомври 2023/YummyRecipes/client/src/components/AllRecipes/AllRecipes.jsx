@@ -8,14 +8,13 @@ import Container from "react-bootstrap/Container";
 
 export default function AllRecipes() {
   const [recipes, setRecipes] = useState([]);
+  console.log(recipes._id);
 
   useEffect(() => {
     recipeService
       .getAll()
       .then((recipes) => setRecipes(recipes))
       .catch((err) => console.log(err));
-
-    console.log(recipes);
   }, []);
 
   return (

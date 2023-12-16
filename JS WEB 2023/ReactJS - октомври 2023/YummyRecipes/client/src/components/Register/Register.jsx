@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import AuthContext from "../../contexts/authContext";
 import useForm from "../../hooks/useForm";
-import registerImg from "../Register/registerImg.jpg";
+import appWallpaper from "../../../public/appWallpaper.jpg";
 
 const registerFormKeys = {
   Username: "username",
@@ -20,7 +20,7 @@ export default function Register() {
   return (
     <div
       style={{
-        backgroundImage: `url(${registerImg})`,
+        backgroundImage: `url(${appWallpaper})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",

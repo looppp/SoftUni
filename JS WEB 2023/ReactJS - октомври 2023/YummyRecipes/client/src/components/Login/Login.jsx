@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import loginImg from "../Login/loginImg.jpg";
+import appWallpaper from "../../../public/appWallpaper.jpg";
 import AuthContext from "../../contexts/authContext";
 import useForm from "../../hooks/useForm";
 
@@ -18,7 +18,7 @@ export default function Login() {
   return (
     <div
       style={{
-        backgroundImage: `url(${loginImg})`,
+        backgroundImage: `url(${appWallpaper})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",

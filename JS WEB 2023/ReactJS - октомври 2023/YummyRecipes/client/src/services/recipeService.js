@@ -11,3 +11,9 @@ export const getAll = async () => {
   const result = await request.get(baseUrl);
   return result;
 };
+
+export const getOne = async (recipeId) => {
+  const result = await request.get(`${baseUrl}/${recipeId}`);
+
+  return result;
+};
