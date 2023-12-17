@@ -1,5 +1,5 @@
 import { useState } from "react";
-import appWallpaper from "../../../public/appWallpaper.jpg";
+import appWallpaper from "../../appWallpaper.jpg";
 import * as recipeService from "../../services/recipeService";
 import { useNavigate } from "react-router-dom";
 
@@ -24,6 +24,7 @@ export default function CreateRecipe() {
     [recipeFormKeys.RecipeName]: "",
     [recipeFormKeys.Description]: "",
     [recipeFormKeys.CookingTime]: "",
+    [recipeFormKeys.Servings]: "",
     [recipeFormKeys.Ingredients]: "",
     [recipeFormKeys.Directions]: "",
     [recipeFormKeys.ImageUrl]: "",
@@ -176,7 +177,7 @@ export default function CreateRecipe() {
                           className="ms-3"
                           onClick={() => deleteIngredient(index)}
                         >
-                          <ion-icon name="close-outline"></ion-icon>
+                          <i className="fa-solid fa-trash fa-bounce"></i>
                         </button>
                       </div>
                     </div>

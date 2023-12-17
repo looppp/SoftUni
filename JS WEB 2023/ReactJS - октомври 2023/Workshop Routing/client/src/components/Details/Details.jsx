@@ -15,7 +15,7 @@ export default function Details() {
   const { gameId } = useParams();
   const [game, setGame] = useState({});
   const navigate = useNavigate();
-  console.log(gameId);
+  console.log(game);
 
   useEffect(() => {
     gameService.getOne(gameId).then(setGame);

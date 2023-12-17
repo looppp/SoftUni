@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import AuthContext from "../../contexts/authContext";
 import useForm from "../../hooks/useForm";
-import appWallpaper from "../../../public/appWallpaper.jpg";
+import appWallpaper from "../../appWallpaper.jpg";
 
 const registerFormKeys = {
   Username: "username",

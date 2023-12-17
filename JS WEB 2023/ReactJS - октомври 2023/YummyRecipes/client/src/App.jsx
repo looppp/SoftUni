@@ -23,7 +23,7 @@ function App() {
           <Route path="/recipes" element={<AllRecipes />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/recipes/create" element={<CreateRecipe />} />
-          <Route path="/recipes/:gameId" element={<RecipeDetails />} />
+          <Route path="/recipes/:recipeId" element={<RecipeDetails />} />
         </Routes>
       </>
     </AuthProvider>

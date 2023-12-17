@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import appWallpaper from "../../../public/appWallpaper.jpg";
+import appWallpaper from "../../appWallpaper.jpg";
 import AuthContext from "../../contexts/authContext";
 import useForm from "../../hooks/useForm";
 
