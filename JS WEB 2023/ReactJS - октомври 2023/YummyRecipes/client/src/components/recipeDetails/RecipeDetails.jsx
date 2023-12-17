@@ -63,7 +63,7 @@ export default function RecipeDetails() {
       <Row>
         <Col sm={8} className="mt-5 ">
           <h1 style={{ textAlign: "center" }}>{recipe.recipeName}</h1>
-          <h5 className="mt-5 " id="description">
+          <h5 className="mt-5 mb-5 " id="description">
             {recipe.description}
           </h5>
           <Image
@@ -140,7 +140,7 @@ export default function RecipeDetails() {
                     onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
-                <div className="mt-2 text-right">
+                <div className="mt-2  text-right">
                   <button className="btn btn-primary btn-sm shadow-none">
                     Post comment
                   </button>

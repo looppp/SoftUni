@@ -172,13 +172,15 @@ export default function CreateRecipe() {
                           name="ingredient"
                           value={form.ingredient}
                         />
-                        <button
-                          type="button"
-                          className="ms-3"
-                          onClick={() => deleteIngredient(index)}
-                        >
-                          <i className="fa-solid fa-trash fa-bounce"></i>
-                        </button>
+                        {allIngredients.length > 1 && (
+                          <button
+                            type="button"
+                            className="ms-3"
+                            onClick={() => deleteIngredient(index)}
+                          >
+                            <i className="fa-solid fa-trash"></i>
+                          </button>
+                        )}
                       </div>
                     </div>
                   );
@@ -189,12 +191,14 @@ export default function CreateRecipe() {
                 <button className="btn btn-primary mt-4 mx-5">
                   Create Recipe
                 </button>
-                <button
-                  className="btn btn-primary mt-4 mx-5"
-                  onClick={addIngredient}
-                >
-                  Add Ingredient
-                </button>
+                {allIngredients.length >= 1 && allIngredients.length < 9 && (
+                  <button
+                    className="btn btn-primary mt-4 mx-5"
+                    onClick={addIngredient}
+                  >
+                    Add Ingredient
+                  </button>
+                )}
               </div>
             </Row>
           </Container>
