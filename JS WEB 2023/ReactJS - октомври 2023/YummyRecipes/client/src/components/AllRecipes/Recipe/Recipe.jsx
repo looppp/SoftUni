@@ -3,13 +3,7 @@ import Col from "react-bootstrap/Col";
 
 import { Link } from "react-router-dom";
 
-export default function Recipe({
-  _id,
-  recipeName,
-  description,
-  cookingTime,
-  imgUrl,
-}) {
+export default function Recipe({ _id, recipeName, imgUrl }) {
   return (
     <Col md={3}>
       <div className="holder">

@@ -1,14 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import * as recipeService from "../../services/recipeService";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "../recipeDetails/recipe.css";
 import * as commentService from "../../services/commentService";
+import AuthContext from "../../contexts/authContext";
+
+const dateFormatter = new Intl.DateTimeFormat(undefined, {
+  dateStyle: "long",
+  timeStyle: "short",
+});
 
 export default function RecipeDetails() {
+  const { email, userId } = useContext(AuthContext);
   const [recipe, setRecipe] = useState({});
   const [allIng, setAllIng] = useState([]);
   const [comments, setComments] = useState([]);
@@ -28,17 +35,15 @@ export default function RecipeDetails() {
 
   let result = allIng.map((item) => item["ingredient"]);
 
+  const [message, setMessage] = useState("");
+
   const addCommentHandler = async (e) => {
     e.preventDefault();
+    const newComment = await commentService.create(recipeId, message);
 
-    const formData = new FormData(e.currentTarget);
+    setComments((state) => [...state, { ...newComment, owner: { email } }]);
 
-    const newComment = await commentService.create(
-      recipeId,
-      formData.get("comment")
-    );
-
-    setComments((state) => [...state, newComment]);
+    setMessage("");
   };
 
   return (
@@ -57,7 +62,7 @@ export default function RecipeDetails() {
           <h1 className="mt-5 mb-5">Ingredients</h1>
           <ul style={{ fontSize: "22px" }}></ul>
           {result.map((ingredient) => (
-            <h4>
+            <h4 key={ingredient}>
               <li>{ingredient}</li>
             </h4>
           ))}
@@ -66,7 +71,7 @@ export default function RecipeDetails() {
 
           <article className="create-comment mt-5 ">
             <div className="d-flex flex-column comment-section border border-info rounded-2">
-              {comments.map(({ _id, text }) => (
+              {comments.map(({ text, _createdOn, owner: { email } }) => (
                 <>
                   <div className="bg-white p-2 ">
                     <div className="d-flex flex-row user-info ">
@@ -77,10 +82,10 @@ export default function RecipeDetails() {
                       />
                       <div className="d-flex flex-column justify-content-start ml-2">
                         <span className="d-block font-weight-bold name">
-                          Marry Andrews
+                          {email}
                         </span>
                         <span className="date text-black-50">
-                          Shared publicly - Jan 2020
+                          Shared publicly - {dateFormatter.format(_createdOn)}
                         </span>
                       </div>
                     </div>
@@ -119,6 +124,8 @@ export default function RecipeDetails() {
                     style={{ whiteSpace: "pre-line" }}
                     name="comment"
                     className="form-control ml-1 shadow-none textarea"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
                 <div className="mt-2 text-right">
@@ -133,6 +140,23 @@ export default function RecipeDetails() {
 
         <Col sm={4} className="mt-5">
           <h1 style={{ textAlign: "center" }}>Profile </h1>
+
+          {userId === recipe._ownerId && (
+            <div className="creator-buttons text-center ">
+              <Link
+                to={`/recipes/${recipeId}/edit`}
+                className="btn btn-primary me-5"
+              >
+                Edit
+              </Link>
+              <Link
+                to={`/recipes/${recipeId}/delete`}
+                className="btn btn-danger"
+              >
+                Delete
+              </Link>
+            </div>
+          )}
         </Col>
       </Row>
     </Container>

@@ -2,6 +2,10 @@ import * as request from "../library/request";
 const baseUrl = "http://localhost:3030/data/comments";
 
 export const create = async (recipeId, text) => {
+  if (text === "" || text === null) {
+    throw Error("Message is required");
+  }
+
   const newComment = await request.post(baseUrl, {
     recipeId,
     text,

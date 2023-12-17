@@ -10,13 +10,10 @@ export default function useForm(submitHandler, initialValues) {
     }));
 
     values.ingredients = initialValues.ingredients;
-    console.log(values.ingredients);
-    console.log(values);
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
-
     submitHandler(values);
   };
 
