@@ -10,6 +10,7 @@ import RecipeDetails from "./components/recipeDetails/RecipeDetails";
 import { Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./contexts/authContext";
 import EditRecipe from "./components/Edit-recipe/EditRecipe";
+import AuthGuard from "./components/guards/AuthGuard";
 
 function App() {
   return (
@@ -22,10 +23,13 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/recipes" element={<AllRecipes />} />
-          <Route path="/logout" element={<Logout />} />
-          <Route path="/recipes/create" element={<CreateRecipe />} />
           <Route path="/recipes/:recipeId" element={<RecipeDetails />} />
-          <Route path="/recipes/:recipeId/edit" element={<EditRecipe />} />
+
+          <Route element={<AuthGuard />}>
+            <Route path="/logout" element={<Logout />} />
+            <Route path="/recipes/create" element={<CreateRecipe />} />
+            <Route path="/recipes/:recipeId/edit" element={<EditRecipe />} />
+          </Route>
         </Routes>
       </>
     </AuthProvider>

@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import * as recipeService from "../../services/recipeService";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import "../recipeDetails/recipe.css";
 import * as commentService from "../../services/commentService";
 import AuthContext from "../../contexts/authContext";
@@ -16,6 +16,7 @@ const dateFormatter = new Intl.DateTimeFormat(undefined, {
 
 export default function RecipeDetails() {
   const { email, userId } = useContext(AuthContext);
+  const navigate = useNavigate();
   const [recipe, setRecipe] = useState({});
   const [allIng, setAllIng] = useState([]);
   const [comments, setComments] = useState([]);
@@ -44,6 +45,17 @@ export default function RecipeDetails() {
     setComments((state) => [...state, { ...newComment, owner: { email } }]);
 
     setMessage("");
+  };
+
+  const recipeDeleteHandler = async () => {
+    const hasConfirmed = confirm(
+      `Are you sure you want to delete ${recipe.recipeName}`
+    );
+    if (hasConfirmed) {
+      await recipeService.removeOne(recipeId);
+      navigate("/recipes");
+      //TODO: Delete all the comments for the current recipe
+    }
   };
 
   return (
@@ -149,12 +161,13 @@ export default function RecipeDetails() {
               >
                 Edit
               </Link>
-              <Link
-                to={`/recipes/${recipeId}/delete`}
+              <button
+                type="button"
+                onClick={recipeDeleteHandler}
                 className="btn btn-danger"
               >
                 Delete
-              </Link>
+              </button>
             </div>
           )}
         </Col>

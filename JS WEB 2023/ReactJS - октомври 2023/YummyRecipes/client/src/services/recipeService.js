@@ -23,3 +23,7 @@ export const getOne = async (recipeId) => {
 
   return result;
 };
+
+export const removeOne = async (recipeId) => {
+  await request.remove(`${baseUrl}/${recipeId}`);
+};
