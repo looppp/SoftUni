@@ -61,7 +61,6 @@ export default function EditRecipe() {
     setErrors(Validation(allRecipes, allIngredients));
 
     if (Object.keys(errors).length === 0) {
-      console.log("i am inside");
       const result = await recipeService.edit(recipeId, allRecipes);
       navigate("/recipes");
       return result;

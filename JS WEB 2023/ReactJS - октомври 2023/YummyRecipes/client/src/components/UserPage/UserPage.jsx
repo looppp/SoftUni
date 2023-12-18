@@ -1,19 +1,23 @@
 import { useContext, useEffect, useState } from "react";
 import "../UserPage/UserPage.css";
 import * as recipeService from "../../services/recipeService";
-import * as authService from "../../services/authService";
+import * as profileService from "../../services/profileService";
 
 import AuthContext from "../../contexts/authContext";
+import Recipe from "../AllRecipes/Recipe/Recipe";
 
 export default function UserPage() {
   const { userId, username } = useContext(AuthContext);
-  const [recipes, setRecipes] = useState({});
-  const [user, setUser] = useState({});
+  const [recipes, setRecipes] = useState([]);
+  const [profile, setProfile] = useState({});
   const [isInEdit, setIsInEdit] = useState(false);
 
   useEffect(() => {
-    authService.getUser().then(setUser);
-    recipeService.getAllByUser(userId).then(setRecipes);
+    profileService.getProfile(userId).then((x) => setProfile(x[0]));
+    recipeService
+      .getAllByUser(userId)
+      .then(setRecipes)
+      .catch((err) => console.log(err));
   }, []);
 
   const changeAboutHandler = (e) => {
@@ -21,11 +25,19 @@ export default function UserPage() {
     setIsInEdit(!isInEdit);
   };
 
-  const saveEditHandler = (e) => {
+  const saveEditHandler = async (e) => {
     e.preventDefault();
-    console.log("saved the neww input");
+    const result = await profileService.editProfile(profile._id, profile);
+    setIsInEdit(!isInEdit);
   };
 
+  const changeHandler = (e) => {
+    e.preventDefault();
+    setProfile((state) => ({
+      ...state,
+      [e.target.name]: e.target.value,
+    }));
+  };
   return (
     <>
       <div className="row py-5 px-4">
@@ -35,7 +47,7 @@ export default function UserPage() {
               <div className="media align-items-end profile-head">
                 <div className="profile mr-3">
                   <img
-                    src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    src={profile.profileUrl}
                     alt="..."
                     width="130"
                     className="rounded mb-2 img-thumbnail"
@@ -74,16 +86,18 @@ export default function UserPage() {
               <h5 className="mb-0">About</h5>
               {!isInEdit && (
                 <div
-                  className="p-4 rounded shadow-sm bg-light"
+                  className="p-4 mt-3 rounded shadow-sm bg-light"
                   onDoubleClick={changeAboutHandler}
                 >
-                  <p className="font-italic mb-0">About</p>
+                  <p className="font-italic mb-0">{profile.aboutYou}</p>
                 </div>
               )}
               {isInEdit && (
                 <div className=" form-group p-4 rounded shadow-sm bg-light">
                   <textarea
                     type="text"
+                    name="aboutYou"
+                    onChange={changeHandler}
                     className=" form-control font-italic mb-0"
                   />
                   <div className="form-group">
@@ -94,54 +108,17 @@ export default function UserPage() {
                     >
                       Save Changes
                     </button>
-                    <button
-                      type="button"
-                      className="form-control mt-2"
-                      onClick={changeAboutHandler}
-                    >
-                      Discard Changes
-                    </button>
                   </div>
                 </div>
               )}
             </div>
             <div className="py-4 px-4">
               <div className="d-flex align-items-center justify-content-between mb-3">
-                <h5 className="mb-0">Recent photos</h5>
-                <a href="#" className="btn btn-link text-muted">
-                  Show all
-                </a>
+                <h5 className="mb-0">Recent recipes</h5>
               </div>
-              <div className="row">
-                <div className="col-lg-6 mb-2 pr-lg-1">
-                  <img
-                    src="https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                    alt=""
-                    className="img-fluid rounded shadow-sm"
-                  />
-                </div>
-                <div className="col-lg-6 mb-2 pl-lg-1">
-                  <img
-                    src="https://images.unsplash.com/photo-1493571716545-b559a19edd14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                    alt=""
-                    className="img-fluid rounded shadow-sm"
-                  />
-                </div>
-                <div className="col-lg-6 pr-lg-1 mb-2">
-                  <img
-                    src="https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                    alt=""
-                    className="img-fluid rounded shadow-sm"
-                  />
-                </div>
-                <div className="col-lg-6 pl-lg-1">
-                  <img
-                    src="https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                    alt=""
-                    className="img-fluid rounded shadow-sm"
-                  />
-                </div>
-              </div>
+              {recipes.map((recipe) => (
+                <Recipe key={recipe._id} {...recipe} />
+              ))}
             </div>
           </div>
         </div>

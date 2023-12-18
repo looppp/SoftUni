@@ -2,6 +2,7 @@ import { createContext } from "react";
 import { useNavigate } from "react-router-dom";
 import usePersistedState from "../hooks/usePersistedState";
 import * as authService from "../services/authService";
+import * as profileService from "../services/profileService";
 
 const AuthContext = createContext();
 
@@ -20,6 +21,13 @@ export const AuthProvider = ({ children }) => {
   };
 
   const registerSubmitHandler = async (values) => {
+    //Creating the basic data for the Profile on registration
+    const aboutYou = "Tell us more about yourself. Double click to write";
+    const profileUrl =
+      "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+
+    const payload = new Object({ aboutYou, profileUrl });
+
     const result = await authService.register(values.email, values.password);
 
     setAuth(result);
@@ -27,6 +35,8 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem("accessToken", result.accessToken);
 
     navigate("/");
+    await profileService.createProfile(payload);
+    console.log("hiiiiiii");
   };
 
   const logoutHandler = () => {
