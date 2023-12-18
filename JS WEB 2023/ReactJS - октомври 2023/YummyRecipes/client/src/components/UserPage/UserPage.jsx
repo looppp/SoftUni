@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import "../UserPage/UserPage.css";
 import * as recipeService from "../../services/recipeService";
 import * as profileService from "../../services/profileService";
+import Alert from "react-bootstrap/Alert";
 
 import AuthContext from "../../contexts/authContext";
 import Recipe from "../AllRecipes/Recipe/Recipe";
@@ -119,6 +120,11 @@ export default function UserPage() {
               {recipes.map((recipe) => (
                 <Recipe key={recipe._id} {...recipe} />
               ))}
+              {recipes.length === 0 && (
+                <Alert variant="info" className="text-center mt-5">
+                  <h1>There are no recipies yet!</h1>
+                </Alert>
+              )}
             </div>
           </div>
         </div>

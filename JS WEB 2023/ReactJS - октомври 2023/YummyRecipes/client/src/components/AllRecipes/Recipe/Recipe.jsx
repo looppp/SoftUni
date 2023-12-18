@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Recipe({ _id, recipeName, imgUrl }) {
   return (
-    <Col className="justify-content-lg-evenly">
+    <Col md={3}>
       <div className="holder">
         <Card className="mt-4">
           <Card.Img style={{ height: "200px" }} src={imgUrl} />
