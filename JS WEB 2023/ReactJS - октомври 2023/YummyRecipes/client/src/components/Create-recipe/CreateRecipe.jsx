@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import Validation from "../../util/Validation";
+import Validation from "../../util/RecipeValidation";
 
 const recipeFormKeys = {
   RecipeName: "recipeName",
