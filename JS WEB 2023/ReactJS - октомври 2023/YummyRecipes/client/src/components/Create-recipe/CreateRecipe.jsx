@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
+import Validation from "../../util/Validation";
 
 const recipeFormKeys = {
   RecipeName: "recipeName",
@@ -19,6 +20,7 @@ const recipeFormKeys = {
 
 export default function CreateRecipe() {
   const navigate = useNavigate();
+  const [errors, setErrors] = useState({});
   const [allIngredients, setAllIngredients] = useState([{ ingredient: "" }]);
   const [allRecipes, setAllRecipes] = useState({
     [recipeFormKeys.RecipeName]: "",
@@ -45,9 +47,12 @@ export default function CreateRecipe() {
 
   const createRecipeSubmitHandler = async (e) => {
     e.preventDefault();
-    const result = await recipeService.create(allRecipes);
-    navigate("/recipes");
-    return result;
+    setErrors(Validation(allRecipes, allIngredients));
+    if (!errors) {
+      const result = await recipeService.create(allRecipes);
+      navigate("/recipes");
+      return result;
+    }
   };
 
   const onChange = (e) => {
@@ -55,12 +60,18 @@ export default function CreateRecipe() {
       ...state,
       [e.target.name]: e.target.value,
     }));
+    setErrors(Validation(allRecipes, allIngredients));
   };
 
   const deleteIngredient = (index) => {
     let data = [...allIngredients];
     data.splice(index, 1);
     setAllIngredients(data);
+  };
+
+  const correctInputChecker = (e) => {
+    e.preventDefault();
+    setErrors(Validation(allRecipes, allIngredients));
   };
 
   return (
@@ -82,6 +93,7 @@ export default function CreateRecipe() {
                 <div className="mb-2">
                   <label htmlFor="recipe-name">Recipe name</label>
                   <input
+                    onBlur={correctInputChecker}
                     type="name"
                     id="name"
                     placeholder="Enter Recipe Name"
@@ -90,11 +102,15 @@ export default function CreateRecipe() {
                     name={recipeFormKeys.RecipeName}
                     value={allRecipes[recipeFormKeys.RecipeName]}
                   />
+                  {errors.recipeName && (
+                    <p style={{ color: "red" }}>{errors.recipeName}</p>
+                  )}
                 </div>
                 <div className="mb-2">
                   <label htmlFor="Description">Description</label>
 
                   <textarea
+                    onBlur={correctInputChecker}
                     type="text"
                     id="Description"
                     placeholder="Enter Description"
@@ -103,11 +119,15 @@ export default function CreateRecipe() {
                     name={recipeFormKeys.Description}
                     value={allRecipes[recipeFormKeys.Description]}
                   />
+                  {errors.description && (
+                    <p style={{ color: "red" }}>{errors.description}</p>
+                  )}
                 </div>
 
                 <div className="mb-2">
                   <label htmlFor="cook-time">Cooking Time</label>
                   <input
+                    onBlur={correctInputChecker}
                     type="number"
                     id="cooking-time"
                     placeholder="Enter Cooking Time"
@@ -116,10 +136,14 @@ export default function CreateRecipe() {
                     name={recipeFormKeys.CookingTime}
                     value={allRecipes[recipeFormKeys.CookingTime]}
                   />
+                  {errors.cookingTime && (
+                    <p style={{ color: "red" }}>{errors.cookingTime}</p>
+                  )}
                 </div>
                 <div className="mb-2">
                   <label htmlFor="servings">Servings</label>
                   <input
+                    onBlur={correctInputChecker}
                     type="number"
                     id="servings"
                     placeholder="Enter Servings"
@@ -128,11 +152,15 @@ export default function CreateRecipe() {
                     name={recipeFormKeys.Servings}
                     value={allRecipes[recipeFormKeys.Servings]}
                   />
+                  {errors.servings && (
+                    <p style={{ color: "red" }}>{errors.servings}</p>
+                  )}
                 </div>
 
                 <div className="mb-2">
                   <label htmlFor="directions">Directions</label>
                   <textarea
+                    onBlur={correctInputChecker}
                     style={{ height: "70px" }}
                     type="text"
                     id="directions"
@@ -142,10 +170,14 @@ export default function CreateRecipe() {
                     name={recipeFormKeys.Directions}
                     value={allRecipes[recipeFormKeys.Directions]}
                   />
+                  {errors.directions && (
+                    <p style={{ color: "red" }}>{errors.directions}</p>
+                  )}
                 </div>
                 <div className="mb-2">
                   <label htmlFor="imgUrl">Image Url</label>
                   <input
+                    onBlur={correctInputChecker}
                     type="text"
                     id="imgUrl"
                     placeholder="Enter Image Url"
@@ -154,16 +186,20 @@ export default function CreateRecipe() {
                     name={recipeFormKeys.ImageUrl}
                     value={allRecipes[recipeFormKeys.ImageUrl]}
                   />
+                  {errors.imgUrl && (
+                    <p style={{ color: "red" }}>{errors.imgUrl}</p>
+                  )}
                 </div>
               </Col>
 
               <Col sm={6}>
                 {allIngredients.map((form, index) => {
                   return (
-                    <div className="mb-2" key={index}>
+                    <div className="mb-1" key={index}>
                       <label htmlFor="ingredients">Ingredients</label>
                       <div className="d-flex align-items-center">
                         <input
+                          onBlur={correctInputChecker}
                           type="text"
                           id="ingredients"
                           placeholder="Enter Ingredients"
@@ -182,6 +218,9 @@ export default function CreateRecipe() {
                           </button>
                         )}
                       </div>
+                      {errors.ingredients && (
+                        <p style={{ color: "red" }}>{errors.ingredients}</p>
+                      )}
                     </div>
                   );
                 })}
