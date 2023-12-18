@@ -38,7 +38,7 @@ export default function Header() {
                   Logout
                 </Nav.Link>
                 <p> </p>
-                <Nav.Link as={Link} to={"/userPage"}>
+                <Nav.Link as={Link} to={"/profile"}>
                   Hello:{username}
                 </Nav.Link>
               </>

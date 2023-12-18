@@ -4,7 +4,6 @@ import useForm from "../../hooks/useForm";
 import appWallpaper from "../../appWallpaper.jpg";
 
 const registerFormKeys = {
-  Username: "username",
   Email: "email",
   Password: "password",
 };
@@ -13,7 +12,6 @@ export default function Register() {
   const { registerSubmitHandler } = useContext(AuthContext);
 
   const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
-    [registerFormKeys.Username]: "",
     [registerFormKeys.Email]: "",
     [registerFormKeys.Password]: "",
   });

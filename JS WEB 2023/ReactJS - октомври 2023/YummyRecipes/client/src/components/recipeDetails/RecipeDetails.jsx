@@ -71,6 +71,23 @@ export default function RecipeDetails() {
             src={recipe.imgUrl}
             fluid
           ></Image>
+          {userId === recipe._ownerId && (
+            <div className="creator-buttons text-center mt-4">
+              <Link
+                to={`/recipes/${recipeId}/edit`}
+                className="btn btn-primary me-5"
+              >
+                Edit
+              </Link>
+              <button
+                type="button"
+                onClick={recipeDeleteHandler}
+                className="btn btn-danger"
+              >
+                Delete
+              </button>
+            </div>
+          )}
           <h1 className="mt-5 mb-5">Ingredients</h1>
           <ul style={{ fontSize: "22px" }}></ul>
           {result.map((ingredient) => (
@@ -152,24 +169,6 @@ export default function RecipeDetails() {
 
         <Col sm={4} className="mt-5">
           <h1 style={{ textAlign: "center" }}>Profile </h1>
-
-          {userId === recipe._ownerId && (
-            <div className="creator-buttons text-center ">
-              <Link
-                to={`/recipes/${recipeId}/edit`}
-                className="btn btn-primary me-5"
-              >
-                Edit
-              </Link>
-              <button
-                type="button"
-                onClick={recipeDeleteHandler}
-                className="btn btn-danger"
-              >
-                Delete
-              </button>
-            </div>
-          )}
         </Col>
       </Row>
     </Container>

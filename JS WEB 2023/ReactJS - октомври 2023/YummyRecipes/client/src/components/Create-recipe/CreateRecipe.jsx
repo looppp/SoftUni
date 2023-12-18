@@ -48,7 +48,7 @@ export default function CreateRecipe() {
   const createRecipeSubmitHandler = async (e) => {
     e.preventDefault();
     setErrors(Validation(allRecipes, allIngredients));
-    if (!errors) {
+    if (Object.keys(errors).length === 0) {
       const result = await recipeService.create(allRecipes);
       navigate("/recipes");
       return result;

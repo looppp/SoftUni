@@ -18,6 +18,12 @@ export const getAll = async () => {
   return result;
 };
 
+export const getAllByUser = async (userId) => {
+  const result = await request.get(baseUrl);
+
+  return result.filter((x) => x._ownerId === userId);
+};
+
 export const getOne = async (recipeId) => {
   const result = await request.get(`${baseUrl}/${recipeId}`);
 
