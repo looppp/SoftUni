@@ -26,7 +26,6 @@ export default function AllRecipes() {
                 style={{
                   textAlign: "center",
                   marginTop: "50px",
-                  marginBottom: "100px",
                 }}
               >
                 All of our Recipes

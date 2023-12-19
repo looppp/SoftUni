@@ -69,9 +69,9 @@ export default function RecipeDetails() {
             {recipe.description}
           </h5>
           <div className="text-center d-flex ">
-            <p className=" fw-bold">Published By {email} </p>{" "}
-            <p className="ms-5 fw-bold">
-              Published on {dateFormatter.format(recipe._createdOn)}
+            <p className=" fw-bold"> </p>{" "}
+            <p className="ms-1 fw-bold">
+              Published By {email} on {dateFormatter.format(recipe._createdOn)}
             </p>
           </div>
           <Image
@@ -80,10 +80,10 @@ export default function RecipeDetails() {
             fluid
           ></Image>
           {userId === recipe._ownerId && (
-            <div className="creator-buttons text-center mt-4">
+            <div className="creator-buttons d-flex text-center mt-4">
               <Link
                 to={`/recipes/${recipeId}/edit`}
-                className="btn btn-primary me-5"
+                className="btn btn-primary me-3 p-3"
               >
                 Edit
               </Link>
@@ -94,6 +94,12 @@ export default function RecipeDetails() {
               >
                 Delete
               </button>
+              <p className=" ms-5 fw-bold fs-4 text">
+                Cooking time: {recipe.cookingTime}
+              </p>
+              <p className=" ms-5 fw-bold fs-4 text">
+                Servings: {recipe.servings}
+              </p>
             </div>
           )}
           <h1 className="mt-5 mb-5">Ingredients</h1>
