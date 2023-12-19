@@ -6,16 +6,15 @@ import appWallpaper from "../../appWallpaper.jpg";
 const registerFormKeys = {
   Email: "email",
   Password: "password",
-  Repassword: "repassword",
 };
 
 export default function Register() {
   const { registerSubmitHandler } = useContext(AuthContext);
+  const { errors } = useContext(AuthContext);
 
   const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
     [registerFormKeys.Email]: "",
     [registerFormKeys.Password]: "",
-    [registerFormKeys.Repassword]: "",
   });
   return (
     <div
@@ -41,6 +40,7 @@ export default function Register() {
               onChange={onChange}
               value={values[registerFormKeys.Email]}
             />
+            {errors.message && <p style={{ color: "red" }}>{errors.message}</p>}
           </div>
           <div className="mb-2">
             <label htmlFor="Password">Password</label>
@@ -53,19 +53,9 @@ export default function Register() {
               onChange={onChange}
               value={values[registerFormKeys.Password]}
             />
+            {errors.message && <p style={{ color: "red" }}>{errors.message}</p>}
           </div>
-          <div className="mb-2">
-            <label htmlFor="repassword">Repeat Password</label>
-            <input
-              required
-              name="repassword"
-              type="Password"
-              placeholder="Enter Password"
-              className="form-control"
-              onChange={onChange}
-              value={values[registerFormKeys.Repassword]}
-            />
-          </div>
+
           <div className="d-grid">
             <button className="btn btn-primary mt-4 mx-5">Register</button>
           </div>

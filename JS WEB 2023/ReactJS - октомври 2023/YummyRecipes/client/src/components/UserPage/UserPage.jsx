@@ -28,7 +28,7 @@ export default function UserPage() {
 
   const saveEditHandler = async (e) => {
     e.preventDefault();
-    const result = await profileService.editProfile(profile._id, profile);
+    await profileService.editProfile(profile._id, profile);
     setIsInEdit(!isInEdit);
   };
 
@@ -69,18 +69,6 @@ export default function UserPage() {
                     <i className="fa-solid fa-bowl-food"></i>Recipes
                   </small>
                 </li>
-                <li className="list-inline-item">
-                  <h5 className="font-weight-bold mb-0 d-block">745</h5>
-                  <small className="text-muted">
-                    <i className="fas fa-user mr-1"></i>Followers
-                  </small>
-                </li>
-                <li className="list-inline-item">
-                  <h5 className="font-weight-bold mb-0 d-block">340</h5>
-                  <small className="text-muted">
-                    <i className="fas fa-user mr-1"></i>Following
-                  </small>
-                </li>
               </ul>
             </div>
             <div className="px-4 py-3">
@@ -109,6 +97,13 @@ export default function UserPage() {
                     >
                       Save Changes
                     </button>
+                    <button
+                      type="button"
+                      className="form-control  mt-2"
+                      onClick={changeAboutHandler}
+                    >
+                      Discard Changes
+                    </button>
                   </div>
                 </div>
               )}
@@ -122,7 +117,7 @@ export default function UserPage() {
                   <Recipe key={recipe._id} {...recipe} />
                 ))}
                 {recipes.length === 0 && (
-                  <Alert variant="info" className="text-center mt-5">
+                  <Alert variant="info" className="text-align-right p-0 mt-3">
                     <h1>There are no recipies yet!</h1>
                   </Alert>
                 )}
