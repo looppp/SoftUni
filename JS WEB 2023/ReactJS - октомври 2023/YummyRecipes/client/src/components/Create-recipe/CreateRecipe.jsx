@@ -16,6 +16,7 @@ const recipeFormKeys = {
   Ingredients: "ingredients",
   Directions: "directions",
   ImageUrl: "imgUrl",
+  VideoUrl: "videoUrl",
 };
 
 export default function CreateRecipe() {
@@ -30,6 +31,7 @@ export default function CreateRecipe() {
     [recipeFormKeys.Ingredients]: "",
     [recipeFormKeys.Directions]: "",
     [recipeFormKeys.ImageUrl]: "",
+    [recipeFormKeys.VideoUrl]: "",
   });
 
   const handleFormChange = (event, index) => {
@@ -188,6 +190,22 @@ export default function CreateRecipe() {
                   />
                   {errors.imgUrl && (
                     <p style={{ color: "red" }}>{errors.imgUrl}</p>
+                  )}
+                </div>
+                <div className="mb-2">
+                  <label htmlFor="videoUrl">Recipe Video Url</label>
+                  <input
+                    onBlur={correctInputChecker}
+                    type="text"
+                    id="videoUrl"
+                    placeholder="Enter Video Url"
+                    className="form-control"
+                    onChange={onChange}
+                    name={recipeFormKeys.VideoUrl}
+                    value={allRecipes[recipeFormKeys.VideoUrl]}
+                  />
+                  {errors.videoUrl && (
+                    <p style={{ color: "red" }}>{errors.VideoUrl}</p>
                   )}
                 </div>
               </Col>

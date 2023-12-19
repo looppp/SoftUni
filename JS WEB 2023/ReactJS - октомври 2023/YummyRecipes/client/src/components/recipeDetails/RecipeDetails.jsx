@@ -22,6 +22,8 @@ export default function RecipeDetails() {
   const [comments, setComments] = useState([]);
   const { recipeId } = useParams();
 
+  const videoID = recipe.videoUrl.split("v=")[1];
+
   useEffect(() => {
     recipeService
       .getOne(recipeId)
@@ -168,7 +170,19 @@ export default function RecipeDetails() {
         </Col>
 
         <Col sm={4} className="mt-5">
-          <h1 style={{ textAlign: "center" }}>Profile </h1>
+          <h1 style={{ textAlign: "right", marginBottom: "72px" }}>
+            Recipe Video{" "}
+          </h1>
+          <iframe
+            className="position-fixed mt-5 end-10 "
+            width="666"
+            height="315"
+            src={`https://www.youtube.com/embed/${videoID}`}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </Col>
       </Row>
     </Container>
