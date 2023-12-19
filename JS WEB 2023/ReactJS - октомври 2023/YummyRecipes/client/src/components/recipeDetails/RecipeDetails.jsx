@@ -15,19 +15,19 @@ const dateFormatter = new Intl.DateTimeFormat(undefined, {
 });
 
 export default function RecipeDetails() {
+  const { recipeId } = useParams();
   const { email, userId } = useContext(AuthContext);
   const navigate = useNavigate();
-  const [recipe, setRecipe] = useState({});
+  const [recipe, setRecipe] = useState([]);
   const [allIng, setAllIng] = useState([]);
   const [comments, setComments] = useState([]);
-  const { recipeId } = useParams();
-
-  const videoID = recipe.videoUrl.split("v=")[1];
+  const [videoID, setVideoID] = useState([]);
 
   useEffect(() => {
     recipeService
       .getOne(recipeId)
       .then((result) => {
+        setVideoID(result.videoUrl.split("v=")[1]);
         setAllIng(Object.values(result.ingredients));
         setRecipe(result);
       })

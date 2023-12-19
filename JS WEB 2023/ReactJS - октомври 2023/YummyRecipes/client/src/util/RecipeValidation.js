@@ -30,5 +30,9 @@ export default function Validation(values, subValues) {
     errors.imgUrl = "Image Url  is required";
   }
 
+  if (values.videoUrl === "") {
+    errors.videoUrl = "Recipe video is required";
+  }
+
   return errors;
 }
