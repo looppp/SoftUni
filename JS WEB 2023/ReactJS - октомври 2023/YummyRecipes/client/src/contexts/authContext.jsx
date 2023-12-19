@@ -29,14 +29,13 @@ export const AuthProvider = ({ children }) => {
     const payload = new Object({ aboutYou, profileUrl });
 
     const result = await authService.register(values.email, values.password);
+    await profileService.createProfile(payload);
 
     setAuth(result);
 
     localStorage.setItem("accessToken", result.accessToken);
 
     navigate("/");
-    await profileService.createProfile(payload);
-    console.log("hiiiiiii");
   };
 
   const logoutHandler = () => {

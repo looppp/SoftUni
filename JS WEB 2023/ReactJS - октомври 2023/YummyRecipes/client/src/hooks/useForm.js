@@ -8,8 +8,6 @@ export default function useForm(submitHandler, initialValues) {
       ...state,
       [e.target.name]: e.target.value,
     }));
-
-    values.ingredients = initialValues.ingredients;
   };
 
   const onSubmit = (e) => {

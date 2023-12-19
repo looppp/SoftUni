@@ -6,6 +6,7 @@ import appWallpaper from "../../appWallpaper.jpg";
 const registerFormKeys = {
   Email: "email",
   Password: "password",
+  Repassword: "repassword",
 };
 
 export default function Register() {
@@ -14,6 +15,7 @@ export default function Register() {
   const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
     [registerFormKeys.Email]: "",
     [registerFormKeys.Password]: "",
+    [registerFormKeys.Repassword]: "",
   });
   return (
     <div
@@ -31,6 +33,7 @@ export default function Register() {
           <div className="mb-2">
             <label htmlFor="email">Email</label>
             <input
+              required
               name="email"
               type="email"
               placeholder="Enter Email"
@@ -42,12 +45,25 @@ export default function Register() {
           <div className="mb-2">
             <label htmlFor="Password">Password</label>
             <input
+              required
               name="password"
               type="Password"
               placeholder="Enter Password"
               className="form-control"
               onChange={onChange}
               value={values[registerFormKeys.Password]}
+            />
+          </div>
+          <div className="mb-2">
+            <label htmlFor="repassword">Repeat Password</label>
+            <input
+              required
+              name="repassword"
+              type="Password"
+              placeholder="Enter Password"
+              className="form-control"
+              onChange={onChange}
+              value={values[registerFormKeys.Repassword]}
             />
           </div>
           <div className="d-grid">
