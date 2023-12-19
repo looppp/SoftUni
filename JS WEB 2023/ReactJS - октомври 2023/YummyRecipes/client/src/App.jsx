@@ -12,6 +12,7 @@ import { AuthProvider } from "./contexts/authContext";
 import EditRecipe from "./components/Edit-recipe/EditRecipe";
 import AuthGuard from "./components/guards/AuthGuard";
 import UserPage from "./components/UserPage/UserPage";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
             <Route path="/profile" element={<UserPage />} />
           </Route>
         </Routes>
+
+        <Footer />
       </>
     </AuthProvider>
   );
