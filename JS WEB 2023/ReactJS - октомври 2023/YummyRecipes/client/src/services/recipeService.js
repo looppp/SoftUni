@@ -30,6 +30,12 @@ export const getOne = async (recipeId) => {
   return result;
 };
 
+export const getLatest = async () => {
+  const result = await request.get(baseUrl);
+
+  return result.sort().reverse().slice(0, 5);
+};
+
 export const removeOne = async (recipeId) => {
   await request.remove(`${baseUrl}/${recipeId}`);
 };

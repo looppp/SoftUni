@@ -1,11 +1,37 @@
+import Carousel from "react-bootstrap/Carousel";
+import * as recipeService from "../../services/recipeService";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 export default function Home() {
+  const [latestRecipes, setLatestRecipe] = useState([]);
+
+  useEffect(() => {
+    recipeService.getLatest().then(setLatestRecipe);
+  }, []);
+
   return (
-    <div>
-      <h1>This is the Home page </h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
-        exercitationem velit iste.
-      </p>
-    </div>
+    <>
+      <h1 style={{ fontFamily: "cursive" }} className=" text-center ">
+        Latest Recipes
+      </h1>
+      <Carousel style={{ width: 1111, textAlign: "center", margin: "auto" }}>
+        {latestRecipes.map((recipe) => (
+          <Carousel.Item>
+            <Link to={`/recipes/${recipe._id}`}>
+              <img
+                style={{ height: "700px", width: "1000px" }}
+                src={recipe.imgUrl}
+              />
+            </Link>
+
+            <Carousel.Caption>
+              <h3>{recipe.recipeName}</h3>
+              <p>{recipe.description}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </>
   );
 }

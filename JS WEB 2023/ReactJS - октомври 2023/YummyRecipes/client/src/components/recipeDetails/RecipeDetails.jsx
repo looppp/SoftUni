@@ -68,8 +68,14 @@ export default function RecipeDetails() {
           <h5 className="mt-5 mb-5 " id="description">
             {recipe.description}
           </h5>
+          <div className="text-center d-flex ">
+            <p className=" fw-bold">Published By {email} </p>{" "}
+            <p className="ms-5 fw-bold">
+              Published on {dateFormatter.format(recipe._createdOn)}
+            </p>
+          </div>
           <Image
-            style={{ height: "600px", width: "1000px" }}
+            style={{ height: "500px", width: "1000px" }}
             src={recipe.imgUrl}
             fluid
           ></Image>
@@ -127,18 +133,6 @@ export default function RecipeDetails() {
                       >
                         {text}
                       </p>
-                    </div>
-                  </div>
-                  <div className="bg-white">
-                    <div className="d-flex flex-row fs-12">
-                      <div className="like p-2 cursor">
-                        <i className="fa fa-thumbs-o-up"></i>
-                        <span className="ml-1">Like</span>
-                      </div>
-                      <div className="like p-2 cursor">
-                        <i className="fa fa-commenting-o"></i>
-                        <span className="ml-1">Comment</span>
-                      </div>
                     </div>
                   </div>
                 </>
