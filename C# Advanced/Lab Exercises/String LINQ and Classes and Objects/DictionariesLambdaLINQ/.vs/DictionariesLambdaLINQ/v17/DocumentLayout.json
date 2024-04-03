@@ -1,0 +1,99 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cherybo\u2020\\source\\repos\\DictionariesLambdaLINQ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A99EBE3B-446D-4E13-AF0F-AA9E21F81CD4}|..\\Word Filter\\Word Filter.csproj|c:\\users\\cherybo\u2020\\source\\repos\\word filter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD13232F-2CB6-4A48-8DD6-3C0E948C449E}|01.CountRealNumbers.csproj|c:\\users\\cherybo\u2020\\source\\repos\\dictionarieslambdalinq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD13232F-2CB6-4A48-8DD6-3C0E948C449E}|01.CountRealNumbers.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A99EBE3B-446D-4E13-AF0F-AA9E21F81CD4}|..\\Word Filter\\Word Filter.csproj|c:\\users\\cherybo\u2020\\source\\repos\\word filter\\word filter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75D152A-95E3-42A9-ACAF-133D81FB337F}|..\\3. Word Synonyms\\3. Word Synonyms.csproj|c:\\users\\cherybo\u2020\\source\\repos\\3. word synonyms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802B1358-F06E-4347-AB58-DCD7598E6BFA}|..\\Odd Occurrences\\Odd Occurrences.csproj|c:\\users\\cherybo\u2020\\source\\repos\\odd occurrences\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Word Filter",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\Word Filter\\Word Filter.csproj",
+              "RelativeDocumentMoniker": "..\\Word Filter\\Word Filter.csproj",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\Word Filter\\Word Filter.csproj",
+              "RelativeToolTip": "..\\Word Filter\\Word Filter.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-01T20:41:04.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\Word Filter\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Word Filter\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\Word Filter\\Program.cs",
+              "RelativeToolTip": "..\\Word Filter\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T01:24:37.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\3. Word Synonyms\\Program.cs",
+              "RelativeDocumentMoniker": "..\\3. Word Synonyms\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\3. Word Synonyms\\Program.cs",
+              "RelativeToolTip": "..\\3. Word Synonyms\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T00:11:08.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\Odd Occurrences\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Odd Occurrences\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\Odd Occurrences\\Program.cs",
+              "RelativeToolTip": "..\\Odd Occurrences\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T23:29:01.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\DictionariesLambdaLINQ\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\DictionariesLambdaLINQ\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAIwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T22:58:49.206Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

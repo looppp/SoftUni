@@ -1,0 +1,14 @@
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\bin\Debug\net8.0\Vehicle Catalogue.exe
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\bin\Debug\net8.0\Vehicle Catalogue.deps.json
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\bin\Debug\net8.0\Vehicle Catalogue.runtimeconfig.json
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\bin\Debug\net8.0\Vehicle Catalogue.dll
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\bin\Debug\net8.0\Vehicle Catalogue.pdb
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\obj\Debug\net8.0\Vehicle Catalogue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\obj\Debug\net8.0\Vehicle Catalogue.AssemblyInfoInputs.cache
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\obj\Debug\net8.0\Vehicle Catalogue.AssemblyInfo.cs
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\obj\Debug\net8.0\Vehicle Catalogue.csproj.CoreCompileInputs.cache
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\obj\Debug\net8.0\Vehicle Catalogue.dll
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\obj\Debug\net8.0\refint\Vehicle Catalogue.dll
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\obj\Debug\net8.0\Vehicle Catalogue.pdb
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\obj\Debug\net8.0\Vehicle Catalogue.genruntimeconfig.cache
+C:\Users\Cherybo†\source\repos\Songs\Vehicle Catalogue\obj\Debug\net8.0\ref\Vehicle Catalogue.dll

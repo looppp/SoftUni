@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cherybo\u2020\\source\\repos\\Strings and Text Processing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52E2C730-E672-4EED-B46E-8C6EB3DB99BB}|Text Filter\\Text Filter.csproj|C:\\Users\\Cherybo\u2020\\source\\repos\\Strings and Text Processing\\text filter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52E2C730-E672-4EED-B46E-8C6EB3DB99BB}|Text Filter\\Text Filter.csproj|solutionrelative:text filter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930E5D5B-AB0F-4560-B1D1-391B154C83EF}|Strings and Text Processing\\Strings and Text Processing.csproj|C:\\Users\\Cherybo\u2020\\source\\repos\\Strings and Text Processing\\strings and text processing\\reverse strings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930E5D5B-AB0F-4560-B1D1-391B154C83EF}|Strings and Text Processing\\Strings and Text Processing.csproj|solutionrelative:strings and text processing\\reverse strings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CE65B68-B7BF-4C43-AFF0-B2AB916E1EFE}|Repeat Stringss\\Repeat Stringss.csproj|C:\\Users\\Cherybo\u2020\\source\\repos\\Strings and Text Processing\\repeat stringss\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CE65B68-B7BF-4C43-AFF0-B2AB916E1EFE}|Repeat Stringss\\Repeat Stringss.csproj|solutionrelative:repeat stringss\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\Strings and Text Processing\\Text Filter\\Program.cs",
+              "RelativeDocumentMoniker": "Text Filter\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\Strings and Text Processing\\Text Filter\\Program.cs",
+              "RelativeToolTip": "Text Filter\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T22:59:08.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\Strings and Text Processing\\Repeat Stringss\\Program.cs",
+              "RelativeDocumentMoniker": "Repeat Stringss\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\Strings and Text Processing\\Repeat Stringss\\Program.cs",
+              "RelativeToolTip": "Repeat Stringss\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIAwwAoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T23:08:44.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reverse Strings.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\Strings and Text Processing\\Strings and Text Processing\\Reverse Strings.cs",
+              "RelativeDocumentMoniker": "Strings and Text Processing\\Reverse Strings.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\Strings and Text Processing\\Strings and Text Processing\\Reverse Strings.cs",
+              "RelativeToolTip": "Strings and Text Processing\\Reverse Strings.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAIAwwAsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T21:57:12.312Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+C:\Users\Cherybo†\source\repos\5. Student Academy\bin\Debug\net8.0\5. Student Academy.exe
+C:\Users\Cherybo†\source\repos\5. Student Academy\bin\Debug\net8.0\5. Student Academy.deps.json
+C:\Users\Cherybo†\source\repos\5. Student Academy\bin\Debug\net8.0\5. Student Academy.runtimeconfig.json
+C:\Users\Cherybo†\source\repos\5. Student Academy\bin\Debug\net8.0\5. Student Academy.dll
+C:\Users\Cherybo†\source\repos\5. Student Academy\bin\Debug\net8.0\5. Student Academy.pdb
+C:\Users\Cherybo†\source\repos\5. Student Academy\obj\Debug\net8.0\5. Student Academy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cherybo†\source\repos\5. Student Academy\obj\Debug\net8.0\5. Student Academy.AssemblyInfoInputs.cache
+C:\Users\Cherybo†\source\repos\5. Student Academy\obj\Debug\net8.0\5. Student Academy.AssemblyInfo.cs
+C:\Users\Cherybo†\source\repos\5. Student Academy\obj\Debug\net8.0\5. Student Academy.csproj.CoreCompileInputs.cache
+C:\Users\Cherybo†\source\repos\5. Student Academy\obj\Debug\net8.0\5. Student Academy.dll
+C:\Users\Cherybo†\source\repos\5. Student Academy\obj\Debug\net8.0\refint\5. Student Academy.dll
+C:\Users\Cherybo†\source\repos\5. Student Academy\obj\Debug\net8.0\5. Student Academy.pdb
+C:\Users\Cherybo†\source\repos\5. Student Academy\obj\Debug\net8.0\5. Student Academy.genruntimeconfig.cache
+C:\Users\Cherybo†\source\repos\5. Student Academy\obj\Debug\net8.0\ref\5. Student Academy.dll

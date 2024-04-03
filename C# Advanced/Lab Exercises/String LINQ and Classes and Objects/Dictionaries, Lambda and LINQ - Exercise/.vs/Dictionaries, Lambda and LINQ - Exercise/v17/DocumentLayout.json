@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cherybo\u2020\\source\\repos\\Dictionaries, Lambda and LINQ - Exercise\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F23B38F3-B6AD-4EBC-8D6E-B0BD8D377E5A}|..\\6. Company Users\\6. Company Users.csproj|c:\\users\\cherybo\u2020\\source\\repos\\6. company users\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B7B8391-7CD0-40A0-8971-49EC61E5DB98}|..\\5. Student Academy\\5. Student Academy.csproj|c:\\users\\cherybo\u2020\\source\\repos\\5. student academy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00907DFE-D688-4A47-B24C-C713D837BDC8}|..\\3. Orders\\3. Orders.csproj|c:\\users\\cherybo\u2020\\source\\repos\\3. orders\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918CBDF7-B68C-4016-AE6D-912ED80A3608}|..\\2. A Miner Task\\2. A Miner Task.csproj|c:\\users\\cherybo\u2020\\source\\repos\\2. a miner task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED91759-06B9-42E7-8CD8-C61D41CBE560}|1. Count Chars in a String.csproj|c:\\users\\cherybo\u2020\\source\\repos\\dictionaries, lambda and linq - exercise\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED91759-06B9-42E7-8CD8-C61D41CBE560}|1. Count Chars in a String.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\6. Company Users\\Program.cs",
+              "RelativeDocumentMoniker": "..\\6. Company Users\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\6. Company Users\\Program.cs",
+              "RelativeToolTip": "..\\6. Company Users\\Program.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T01:08:01.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\5. Student Academy\\Program.cs",
+              "RelativeDocumentMoniker": "..\\5. Student Academy\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\5. Student Academy\\Program.cs",
+              "RelativeToolTip": "..\\5. Student Academy\\Program.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T00:43:59.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\3. Orders\\Program.cs",
+              "RelativeDocumentMoniker": "..\\3. Orders\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\3. Orders\\Program.cs",
+              "RelativeToolTip": "..\\3. Orders\\Program.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T23:52:18.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\2. A Miner Task\\Program.cs",
+              "RelativeDocumentMoniker": "..\\2. A Miner Task\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\2. A Miner Task\\Program.cs",
+              "RelativeToolTip": "..\\2. A Miner Task\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T23:11:58.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\Dictionaries, Lambda and LINQ - Exercise\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\Dictionaries, Lambda and LINQ - Exercise\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T21:09:08.013Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

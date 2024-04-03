@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cherybo\u2020\\source\\repos\\Songs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60C84274-6135-47E7-8E81-B7EBB8D145DD}|Vehicle Catalogue\\Vehicle Catalogue.csproj|c:\\users\\cherybo\u2020\\source\\repos\\songs\\vehicle catalogue\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C84274-6135-47E7-8E81-B7EBB8D145DD}|Vehicle Catalogue\\Vehicle Catalogue.csproj|solutionrelative:vehicle catalogue\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C039EFF-8A8F-4427-B942-86E04E393625}|3. Store Boxes\\3. Store Boxes.csproj|c:\\users\\cherybo\u2020\\source\\repos\\songs\\3. store boxes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C039EFF-8A8F-4427-B942-86E04E393625}|3. Store Boxes\\3. Store Boxes.csproj|solutionrelative:3. store boxes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A282471D-9626-4C14-9B5E-27D77382FD7B}|2. Students\\2. Students.csproj|c:\\users\\cherybo\u2020\\source\\repos\\songs\\2. students\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A282471D-9626-4C14-9B5E-27D77382FD7B}|2. Students\\2. Students.csproj|solutionrelative:2. students\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9987CC23-CA59-47CC-AC97-0EB9D4B6CB4E}|Objects and Classes\\Objects and Classes.csproj|c:\\users\\cherybo\u2020\\source\\repos\\songs\\objects and classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9987CC23-CA59-47CC-AC97-0EB9D4B6CB4E}|Objects and Classes\\Objects and Classes.csproj|solutionrelative:objects and classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\Songs\\Vehicle Catalogue\\Program.cs",
+              "RelativeDocumentMoniker": "Vehicle Catalogue\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\Songs\\Vehicle Catalogue\\Program.cs",
+              "RelativeToolTip": "Vehicle Catalogue\\Program.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAcwEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T00:26:06.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\Songs\\3. Store Boxes\\Program.cs",
+              "RelativeDocumentMoniker": "3. Store Boxes\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\Songs\\3. Store Boxes\\Program.cs",
+              "RelativeToolTip": "3. Store Boxes\\Program.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAA/wD0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T23:30:01.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\Songs\\2. Students\\Program.cs",
+              "RelativeDocumentMoniker": "2. Students\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\Songs\\2. Students\\Program.cs",
+              "RelativeToolTip": "2. Students\\Program.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAIwDUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T23:08:05.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\source\\repos\\Songs\\Objects and Classes\\Program.cs",
+              "RelativeDocumentMoniker": "Objects and Classes\\Program.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\source\\repos\\Songs\\Objects and Classes\\Program.cs",
+              "RelativeToolTip": "Objects and Classes\\Program.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAUwDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T21:53:51.003Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

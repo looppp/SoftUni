@@ -1,0 +1,14 @@
+C:\Users\Cherybo†\source\repos\Odd Occurrences\bin\Debug\net8.0\Odd Occurrences.exe
+C:\Users\Cherybo†\source\repos\Odd Occurrences\bin\Debug\net8.0\Odd Occurrences.deps.json
+C:\Users\Cherybo†\source\repos\Odd Occurrences\bin\Debug\net8.0\Odd Occurrences.runtimeconfig.json
+C:\Users\Cherybo†\source\repos\Odd Occurrences\bin\Debug\net8.0\Odd Occurrences.dll
+C:\Users\Cherybo†\source\repos\Odd Occurrences\bin\Debug\net8.0\Odd Occurrences.pdb
+C:\Users\Cherybo†\source\repos\Odd Occurrences\obj\Debug\net8.0\Odd Occurrences.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cherybo†\source\repos\Odd Occurrences\obj\Debug\net8.0\Odd Occurrences.AssemblyInfoInputs.cache
+C:\Users\Cherybo†\source\repos\Odd Occurrences\obj\Debug\net8.0\Odd Occurrences.AssemblyInfo.cs
+C:\Users\Cherybo†\source\repos\Odd Occurrences\obj\Debug\net8.0\Odd Occurrences.csproj.CoreCompileInputs.cache
+C:\Users\Cherybo†\source\repos\Odd Occurrences\obj\Debug\net8.0\Odd Occurrences.dll
+C:\Users\Cherybo†\source\repos\Odd Occurrences\obj\Debug\net8.0\refint\Odd Occurrences.dll
+C:\Users\Cherybo†\source\repos\Odd Occurrences\obj\Debug\net8.0\Odd Occurrences.pdb
+C:\Users\Cherybo†\source\repos\Odd Occurrences\obj\Debug\net8.0\Odd Occurrences.genruntimeconfig.cache
+C:\Users\Cherybo†\source\repos\Odd Occurrences\obj\Debug\net8.0\ref\Odd Occurrences.dll

@@ -1,0 +1,14 @@
+C:\Users\Cherybo†\source\repos\2. A Miner Task\bin\Debug\net8.0\2. A Miner Task.exe
+C:\Users\Cherybo†\source\repos\2. A Miner Task\bin\Debug\net8.0\2. A Miner Task.deps.json
+C:\Users\Cherybo†\source\repos\2. A Miner Task\bin\Debug\net8.0\2. A Miner Task.runtimeconfig.json
+C:\Users\Cherybo†\source\repos\2. A Miner Task\bin\Debug\net8.0\2. A Miner Task.dll
+C:\Users\Cherybo†\source\repos\2. A Miner Task\bin\Debug\net8.0\2. A Miner Task.pdb
+C:\Users\Cherybo†\source\repos\2. A Miner Task\obj\Debug\net8.0\2. A Miner Task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cherybo†\source\repos\2. A Miner Task\obj\Debug\net8.0\2. A Miner Task.AssemblyInfoInputs.cache
+C:\Users\Cherybo†\source\repos\2. A Miner Task\obj\Debug\net8.0\2. A Miner Task.AssemblyInfo.cs
+C:\Users\Cherybo†\source\repos\2. A Miner Task\obj\Debug\net8.0\2. A Miner Task.csproj.CoreCompileInputs.cache
+C:\Users\Cherybo†\source\repos\2. A Miner Task\obj\Debug\net8.0\2. A Miner Task.dll
+C:\Users\Cherybo†\source\repos\2. A Miner Task\obj\Debug\net8.0\refint\2. A Miner Task.dll
+C:\Users\Cherybo†\source\repos\2. A Miner Task\obj\Debug\net8.0\2. A Miner Task.pdb
+C:\Users\Cherybo†\source\repos\2. A Miner Task\obj\Debug\net8.0\2. A Miner Task.genruntimeconfig.cache
+C:\Users\Cherybo†\source\repos\2. A Miner Task\obj\Debug\net8.0\ref\2. A Miner Task.dll

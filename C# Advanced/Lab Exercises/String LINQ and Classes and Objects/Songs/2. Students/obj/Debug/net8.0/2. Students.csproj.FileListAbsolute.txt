@@ -1,0 +1,14 @@
+C:\Users\Cherybo†\source\repos\Songs\2. Students\bin\Debug\net8.0\2. Students.exe
+C:\Users\Cherybo†\source\repos\Songs\2. Students\bin\Debug\net8.0\2. Students.deps.json
+C:\Users\Cherybo†\source\repos\Songs\2. Students\bin\Debug\net8.0\2. Students.runtimeconfig.json
+C:\Users\Cherybo†\source\repos\Songs\2. Students\bin\Debug\net8.0\2. Students.dll
+C:\Users\Cherybo†\source\repos\Songs\2. Students\bin\Debug\net8.0\2. Students.pdb
+C:\Users\Cherybo†\source\repos\Songs\2. Students\obj\Debug\net8.0\2. Students.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cherybo†\source\repos\Songs\2. Students\obj\Debug\net8.0\2. Students.AssemblyInfoInputs.cache
+C:\Users\Cherybo†\source\repos\Songs\2. Students\obj\Debug\net8.0\2. Students.AssemblyInfo.cs
+C:\Users\Cherybo†\source\repos\Songs\2. Students\obj\Debug\net8.0\2. Students.csproj.CoreCompileInputs.cache
+C:\Users\Cherybo†\source\repos\Songs\2. Students\obj\Debug\net8.0\2. Students.dll
+C:\Users\Cherybo†\source\repos\Songs\2. Students\obj\Debug\net8.0\refint\2. Students.dll
+C:\Users\Cherybo†\source\repos\Songs\2. Students\obj\Debug\net8.0\2. Students.pdb
+C:\Users\Cherybo†\source\repos\Songs\2. Students\obj\Debug\net8.0\2. Students.genruntimeconfig.cache
+C:\Users\Cherybo†\source\repos\Songs\2. Students\obj\Debug\net8.0\ref\2. Students.dll

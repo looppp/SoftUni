@@ -1,0 +1,14 @@
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\bin\Debug\net8.0\Objects and Classes.exe
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\bin\Debug\net8.0\Objects and Classes.deps.json
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\bin\Debug\net8.0\Objects and Classes.runtimeconfig.json
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\bin\Debug\net8.0\Objects and Classes.dll
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\bin\Debug\net8.0\Objects and Classes.pdb
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\obj\Debug\net8.0\Objects and Classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\obj\Debug\net8.0\Objects and Classes.AssemblyInfoInputs.cache
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\obj\Debug\net8.0\Objects and Classes.AssemblyInfo.cs
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\obj\Debug\net8.0\Objects and Classes.csproj.CoreCompileInputs.cache
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\obj\Debug\net8.0\Objects and Classes.dll
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\obj\Debug\net8.0\refint\Objects and Classes.dll
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\obj\Debug\net8.0\Objects and Classes.pdb
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\obj\Debug\net8.0\Objects and Classes.genruntimeconfig.cache
+C:\Users\Cherybo†\source\repos\Songs\Objects and Classes\obj\Debug\net8.0\ref\Objects and Classes.dll
