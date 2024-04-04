@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\DefiningClasses\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AADC8805-DAB2-4343-8B86-7ADC6D3F25A6}|CarManufacturer\\CarManufacturer.csproj|c:\\users\\cherybo\u2020\\desktop\\softuni\\c# advanced\\lab exercises\\defining classes\\definingclasses\\carmanufacturer\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADC8805-DAB2-4343-8B86-7ADC6D3F25A6}|CarManufacturer\\CarManufacturer.csproj|solutionrelative:carmanufacturer\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AADC8805-DAB2-4343-8B86-7ADC6D3F25A6}|CarManufacturer\\CarManufacturer.csproj|c:\\users\\cherybo\u2020\\desktop\\softuni\\c# advanced\\lab exercises\\defining classes\\definingclasses\\carmanufacturer\\engine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADC8805-DAB2-4343-8B86-7ADC6D3F25A6}|CarManufacturer\\CarManufacturer.csproj|solutionrelative:carmanufacturer\\engine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AADC8805-DAB2-4343-8B86-7ADC6D3F25A6}|CarManufacturer\\CarManufacturer.csproj|c:\\users\\cherybo\u2020\\desktop\\softuni\\c# advanced\\lab exercises\\defining classes\\definingclasses\\carmanufacturer\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADC8805-DAB2-4343-8B86-7ADC6D3F25A6}|CarManufacturer\\CarManufacturer.csproj|solutionrelative:carmanufacturer\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AADC8805-DAB2-4343-8B86-7ADC6D3F25A6}|CarManufacturer\\CarManufacturer.csproj|c:\\users\\cherybo\u2020\\desktop\\softuni\\c# advanced\\lab exercises\\defining classes\\definingclasses\\carmanufacturer\\tire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADC8805-DAB2-4343-8B86-7ADC6D3F25A6}|CarManufacturer\\CarManufacturer.csproj|solutionrelative:carmanufacturer\\tire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tire.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\DefiningClasses\\CarManufacturer\\Tire.cs",
+              "RelativeDocumentMoniker": "CarManufacturer\\Tire.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\DefiningClasses\\CarManufacturer\\Tire.cs",
+              "RelativeToolTip": "CarManufacturer\\Tire.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T00:35:27.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Engine.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\DefiningClasses\\CarManufacturer\\Engine.cs",
+              "RelativeDocumentMoniker": "CarManufacturer\\Engine.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\DefiningClasses\\CarManufacturer\\Engine.cs",
+              "RelativeToolTip": "CarManufacturer\\Engine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T00:33:30.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\DefiningClasses\\CarManufacturer\\Car.cs",
+              "RelativeDocumentMoniker": "CarManufacturer\\Car.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\DefiningClasses\\CarManufacturer\\Car.cs",
+              "RelativeToolTip": "CarManufacturer\\Car.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAIA9wCYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T22:16:42.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\DefiningClasses\\CarManufacturer\\StartUp.cs",
+              "RelativeDocumentMoniker": "CarManufacturer\\StartUp.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\DefiningClasses\\CarManufacturer\\StartUp.cs",
+              "RelativeToolTip": "CarManufacturer\\StartUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T22:16:22.902Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
