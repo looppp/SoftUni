@@ -1,7 +1,0 @@
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Text Filter\obj\Debug\Text Filter.csproj.AssemblyReference.cache
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Text Filter\obj\Debug\Text Filter.csproj.CoreCompileInputs.cache
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Text Filter\bin\Debug\Text Filter.exe.config
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Text Filter\bin\Debug\Text Filter.exe
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Text Filter\bin\Debug\Text Filter.pdb
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Text Filter\obj\Debug\Text Filter.exe
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Text Filter\obj\Debug\Text Filter.pdb

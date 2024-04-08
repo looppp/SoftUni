@@ -1,7 +1,0 @@
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Strings and Text Processing\bin\Debug\Strings and Text Processing.exe.config
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Strings and Text Processing\bin\Debug\Strings and Text Processing.exe
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Strings and Text Processing\bin\Debug\Strings and Text Processing.pdb
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Strings and Text Processing\obj\Debug\Strings and Text Processing.csproj.AssemblyReference.cache
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Strings and Text Processing\obj\Debug\Strings and Text Processing.csproj.CoreCompileInputs.cache
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Strings and Text Processing\obj\Debug\Strings and Text Processing.exe
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Strings and Text Processing\obj\Debug\Strings and Text Processing.pdb

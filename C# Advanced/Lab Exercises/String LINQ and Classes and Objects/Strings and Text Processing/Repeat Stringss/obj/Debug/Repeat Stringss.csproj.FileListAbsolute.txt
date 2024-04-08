@@ -1,7 +1,0 @@
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Repeat Stringss\bin\Debug\Repeat Stringss.exe.config
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Repeat Stringss\bin\Debug\Repeat Stringss.exe
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Repeat Stringss\bin\Debug\Repeat Stringss.pdb
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Repeat Stringss\obj\Debug\Repeat Stringss.csproj.AssemblyReference.cache
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Repeat Stringss\obj\Debug\Repeat Stringss.csproj.CoreCompileInputs.cache
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Repeat Stringss\obj\Debug\Repeat Stringss.exe
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Repeat Stringss\obj\Debug\Repeat Stringss.pdb

@@ -1,7 +1,0 @@
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Digits, Letters and Others\bin\Debug\Digits, Letters and Others.exe.config
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Digits, Letters and Others\bin\Debug\Digits, Letters and Others.exe
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Digits, Letters and Others\bin\Debug\Digits, Letters and Others.pdb
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Digits, Letters and Others\obj\Debug\Digits, Letters and Others.csproj.AssemblyReference.cache
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Digits, Letters and Others\obj\Debug\Digits, Letters and Others.csproj.CoreCompileInputs.cache
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Digits, Letters and Others\obj\Debug\Digits, Letters and Others.exe
-C:\Users\Cherybo†\source\repos\Strings and Text Processing\Digits, Letters and Others\obj\Debug\Digits, Letters and Others.pdb
