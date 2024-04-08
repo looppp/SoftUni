@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\Classes and Objects\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53E674C4-E4D9-4BED-BA93-F705EC1302A0}|Articles\\Articles.csproj|c:\\users\\cherybo\u2020\\desktop\\softuni\\c# advanced\\lab exercises\\defining classes\\classes and objects\\articles\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E674C4-E4D9-4BED-BA93-F705EC1302A0}|Articles\\Articles.csproj|solutionrelative:articles\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E674C4-E4D9-4BED-BA93-F705EC1302A0}|Articles\\Articles.csproj|c:\\users\\cherybo\u2020\\desktop\\softuni\\c# advanced\\lab exercises\\defining classes\\classes and objects\\articles\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E674C4-E4D9-4BED-BA93-F705EC1302A0}|Articles\\Articles.csproj|solutionrelative:articles\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{790E7D15-273D-49A5-ABE6-735068A47932}|Students\\Students.csproj|c:\\users\\cherybo\u2020\\desktop\\softuni\\c# advanced\\lab exercises\\defining classes\\classes and objects\\students\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{790E7D15-273D-49A5-ABE6-735068A47932}|Students\\Students.csproj|solutionrelative:students\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{790E7D15-273D-49A5-ABE6-735068A47932}|Students\\Students.csproj|c:\\users\\cherybo\u2020\\desktop\\softuni\\c# advanced\\lab exercises\\defining classes\\classes and objects\\students\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{790E7D15-273D-49A5-ABE6-735068A47932}|Students\\Students.csproj|solutionrelative:students\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\Classes and Objects\\Articles\\Article.cs",
+              "RelativeDocumentMoniker": "Articles\\Article.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\Classes and Objects\\Articles\\Article.cs",
+              "RelativeToolTip": "Articles\\Article.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAA7wAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T23:11:12.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\Classes and Objects\\Articles\\StartUp.cs",
+              "RelativeDocumentMoniker": "Articles\\StartUp.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\Classes and Objects\\Articles\\StartUp.cs",
+              "RelativeToolTip": "Articles\\StartUp.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T23:10:46.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\Classes and Objects\\Students\\Student.cs",
+              "RelativeDocumentMoniker": "Students\\Student.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\Classes and Objects\\Students\\Student.cs",
+              "RelativeToolTip": "Students\\Student.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T22:29:33.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\Classes and Objects\\Students\\StartUp.cs",
+              "RelativeDocumentMoniker": "Students\\StartUp.cs",
+              "ToolTip": "C:\\Users\\Cherybo\u2020\\Desktop\\SoftUni\\C# Advanced\\Lab Exercises\\Defining Classes\\Classes and Objects\\Students\\StartUp.cs",
+              "RelativeToolTip": "Students\\StartUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T22:29:03.905Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
