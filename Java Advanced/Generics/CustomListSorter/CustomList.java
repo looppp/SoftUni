@@ -1,4 +1,4 @@
-package Generics.CustomList;
+package Generics.CustomListSorter;
 
 import java.util.ArrayList;
 import java.util.Collections;
