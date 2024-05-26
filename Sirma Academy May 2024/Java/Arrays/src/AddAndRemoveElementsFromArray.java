@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class AddAndRemoveElementsFromArray {
@@ -7,13 +8,24 @@ public class AddAndRemoveElementsFromArray {
         int[] numbersArray = new int[0];
         int initialNumber = 1;
 
-        for (int i = 0; i < commands.length - 1; i++) {
-            if(commands[i].toLowerCase().equals("add")){
-                int[] localArray = new int[numbersArray.length + 1];
-                //TODO create a new array copy the old and add or remove element
-            } else if(commands[i].toLowerCase().equals("remove")){
-
+        for (String command : commands)
+            if (command.equalsIgnoreCase("add")) {
+                int[] newArray = Arrays.copyOf(numbersArray, numbersArray.length + 1);
+                newArray[newArray.length - 1] = initialNumber++;
+                numbersArray = newArray;
+            } else if (command.equalsIgnoreCase("remove")) {
+                int[] newArray = Arrays.copyOf(numbersArray, numbersArray.length - 1);
+                initialNumber++;
+                numbersArray = newArray;
             }
+
+
+
+        if (numbersArray.length == 0) {
+            System.out.println("Empty");
+        } else {
+            System.out.println(String.join(" ", Arrays.toString(numbersArray)));
+
         }
     }
 }
