@@ -8,6 +8,7 @@ public class LongestSequenceOfIdenticalElements {
         int sequenceCounter = 0;
         int currentSelectedNumber = Integer.MIN_VALUE;
 
+
         for (int i = 0; i < inputNumbers.length; i++) {
             //TODO Finish it
         }
