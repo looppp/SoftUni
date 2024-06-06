@@ -11,8 +11,15 @@ public class PrintDiagonalsOfSquareMatrix {
                 squareMatrix[i][j] = sc.nextInt();
             }
         }
+        for (int i = 0; i < matrixDimensions; i++) {
+            System.out.print(squareMatrix[i][i] + " ");
+        }
 
+        System.out.println();
 
+        for (int i = 0; i < matrixDimensions; i++) {
+            System.out.print(squareMatrix[matrixDimensions - 1 - i][i] + " ");
+        }
 
     }
 }
