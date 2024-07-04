@@ -25,51 +25,55 @@ public class HandsOfCards {
                     input = reader.readLine().split(": ");
             }
 
-            for (String name : handsOfCards.keySet()){
-                HashSet<String> inputCards = handsOfCards.get(name);
-                int result = 0;
-                int cardPowerInteger = 0;
-                int cardTypeInteger = 0;
+            calculateSumOfTheCards(handsOfCards);
 
-                for(String card : inputCards){
-                    if(card.length() > 2){
-                        char typeOfCard = card.charAt(2);
-                        switch (typeOfCard) {
-                            case 'S' -> cardTypeInteger = 4;
-                            case 'H' -> cardTypeInteger = 3;
-                            case 'D' -> cardTypeInteger = 2;
-                            case 'C' -> cardTypeInteger = 1;
-                        }
-                        result += 10 * cardTypeInteger;
-
-                    } else {
-                        char powerOfCard = card.charAt(0) ;
-                        char typeOfCard = card.charAt(1);
-
-                        cardPowerInteger = switch (powerOfCard) {
-                            case 'J' -> 11;
-                            case 'Q' -> 12;
-                            case 'K' -> 13;
-                            case 'A' -> 14;
-                            default -> Integer.parseInt(Character.toString(powerOfCard));
-                        };
-                        switch (typeOfCard) {
-                            case 'S' -> cardTypeInteger = 4;
-                            case 'H' -> cardTypeInteger = 3;
-                            case 'D' -> cardTypeInteger = 2;
-                            case 'C' -> cardTypeInteger = 1;
-                        }
-
-                        result += (cardPowerInteger * cardTypeInteger);
-                    }
-
-
-                }
-
-                System.out.println(name + ": " + result);
-            }
         } catch (IOException e){
             throw new RuntimeException(e.getMessage());
+        }
+    }
+    public static void calculateSumOfTheCardsForEachPlayer(LinkedHashMap<String, HashSet<String>> mapOfItems){
+        for (String name : mapOfItems.keySet()){
+            HashSet<String> inputCards = mapOfItems.get(name);
+            int result = 0;
+            int cardPowerInteger = 0;
+            int cardTypeInteger = 0;
+
+            for(String card : inputCards){
+                if(card.length() > 2){
+                    char typeOfCard = card.charAt(2);
+                    switch (typeOfCard) {
+                        case 'S' -> cardTypeInteger = 4;
+                        case 'H' -> cardTypeInteger = 3;
+                        case 'D' -> cardTypeInteger = 2;
+                        case 'C' -> cardTypeInteger = 1;
+                    }
+                    result += 10 * cardTypeInteger;
+
+                } else {
+                    char powerOfCard = card.charAt(0) ;
+                    char typeOfCard = card.charAt(1);
+
+                    cardPowerInteger = switch (powerOfCard) {
+                        case 'J' -> 11;
+                        case 'Q' -> 12;
+                        case 'K' -> 13;
+                        case 'A' -> 14;
+                        default -> Integer.parseInt(Character.toString(powerOfCard));
+                    };
+                    switch (typeOfCard) {
+                        case 'S' -> cardTypeInteger = 4;
+                        case 'H' -> cardTypeInteger = 3;
+                        case 'D' -> cardTypeInteger = 2;
+                        case 'C' -> cardTypeInteger = 1;
+                    }
+
+                    result += (cardPowerInteger * cardTypeInteger);
+                }
+
+
+            }
+
+            System.out.println(name + ": " + result);
         }
     }
 }
