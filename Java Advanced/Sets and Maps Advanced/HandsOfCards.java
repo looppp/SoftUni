@@ -25,7 +25,7 @@ public class HandsOfCards {
                     input = reader.readLine().split(": ");
             }
 
-            calculateSumOfTheCards(handsOfCards);
+            calculateSumOfTheCardsForEachPlayer(handsOfCards);
 
         } catch (IOException e){
             throw new RuntimeException(e.getMessage());
