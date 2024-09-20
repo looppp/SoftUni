@@ -1,5 +1,5 @@
 # React + Vite
 
-## Start the server with "node .\server.js" command in the terminal in the server folder.
+## Start the server with terminal command"node .\server.js" in the server folder.
 
-## Start the client with "npm run dev" command in the client folder.
+## Start the client with terminal command "npm run dev" in the client folder.
